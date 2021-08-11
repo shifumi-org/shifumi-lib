@@ -1,0 +1,36 @@
+.edit-post-visual-editor .wp-block span.learndash-inner-header {
+	display: none;
+}
+
+.edit-post-visual-editor .wp-block.is-selected span.learndash-inner-header,
+.edit-post-visual-editor .wp-block.has-child-selected span.learndash-inner-header {
+	display: block;
+	opacity: .65;
+	font-size: .65em;
+	border-bottom: 1px solid rgba(66,88,99,.4);
+}
+
+.edit-post-visual-editor div[data-type="learndash/ld-course-list"],
+.edit-post-visual-editor div[data-type="learndash/ld-course-list"],
+.edit-post-visual-editor div[data-type="learndash/ld-lesson-list"],
+.edit-post-visual-editor div[data-type="learndash/ld-topic-list"],
+.edit-post-visual-editor div[data-type="learndash/ld-quiz-list"] {
+	padding-top: 10px;
+}
+
+/* Specific styles for the course list block output within the Gutenberg editor */
+.edit-post-visual-editor div[data-type="learndash/ld-course-list"] .ld-course-list-items h2.ld-entry-title {
+	margin-top: 0;
+	margin-bottom: 0;
+	clear: both;
+	width: 100%;
+}
+
+.edit-post-visual-editor .learndash-block-error-message {
+	display: block;
+	color: red;
+}
+
+.components-panel .learndash-block-controls-panel select[multiple] {
+	height: max-content !important;
+}

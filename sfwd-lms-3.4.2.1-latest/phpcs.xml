@@ -1,0 +1,82 @@
+<?xml version="1.0"?>
+<ruleset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" name="LearnDash" xsi:noNamespaceSchemaLocation="vendor/squizlabs/php_codesniffer/phpcs.xsd">
+
+	<description>The custom ruleset for the LearnDash plugin.</description>
+
+	<!-- For help in understanding this file: https://github.com/squizlabs/PHP_CodeSniffer/wiki/Annotated-ruleset.xml -->
+	<!-- For help in using PHPCS: https://github.com/squizlabs/PHP_CodeSniffer/wiki/Usage -->
+
+	<!-- What to scan -->
+	<file>.</file>
+	<!-- Ignoring Files and Folders:
+		https://github.com/squizlabs/PHP_CodeSniffer/wiki/Advanced-Usage#ignoring-files-and-folders -->
+	<exclude-pattern>/node_modules/</exclude-pattern>
+	<exclude-pattern>/vendor/</exclude-pattern>
+	<exclude-pattern>/dev_scripts/</exclude-pattern>
+	<exclude-pattern>/includes/lib/tcpdf</exclude-pattern>
+	<exclude-pattern>/includes/lib/parsecsv-for-php</exclude-pattern>
+	<exclude-pattern>/includes/lib/paypal/ipnlistener.php</exclude-pattern>
+	<exclude-pattern>/includes/lib/paypal/enhanced-paypal-shortcodes.php</exclude-pattern>
+
+
+	<!-- How to scan -->
+	<!-- Show sniff and progress -->
+	<arg value="sp"/>
+	<!-- Formats of the report -->
+	<arg name="report" value="full,summary,source"/>
+	<!-- Show results with colors -->
+	<arg name="colors"/>
+	<!-- Enables parallel processing when available for faster results. -->
+	<arg name="parallel" value="50"/>
+	<!-- Limit to PHP files -->
+	<arg name="extensions" value="php"/>
+
+	<!-- Rules: Check PHP version compatibility - see
+		https://github.com/PHPCompatibility/PHPCompatibilityWP -->
+	<rule ref="PHPCompatibilityWP"></rule>
+	<!-- For help in understanding this testVersion:
+		https://github.com/PHPCompatibility/PHPCompatibility#sniffing-your-code-for-compatibility-with-specific-php-versions -->
+	<config name="testVersion" value="5.6-"/>
+
+	<!-- For help in understanding this custom sniff properties:
+		https://github.com/WordPress-Coding-Standards/WordPress-Coding-Standards/wiki/Customizable-sniff-properties -->
+	<rule ref="WordPress-Extra">
+		<exclude name="PEAR.NamingConventions.ValidClassName.StartWithCapital"/>
+		<!-- Remove after phpcbf is completed. -->
+		<exclude name="WordPress.PHP.StrictComparisons"/>
+		<!-- WP Core added this but we allow both versions -->
+		<exclude name="Generic.Arrays.DisallowShortArraySyntax"/>
+	</rule>
+
+	<!-- For help in understanding this custom sniff properties:
+		https://github.com/WordPress-Coding-Standards/WordPress-Coding-Standards/wiki/Customizable-sniff-properties-->
+	<config name="minimum_supported_wp_version" value="5.0"/>
+
+	<rule ref="WordPress.Files.FileName">
+		<properties>
+			<property name="strict_class_file_names" value="false"/>
+		</properties>
+		<exclude name="WordPress.Files.FileName.NotHyphenatedLowercase"/>
+	</rule>
+
+	<rule ref="WordPress.NamingConventions.PrefixAllGlobals">
+		<properties>
+			<property name="prefixes" type="array">
+				<element value="learndash"/>
+				<element value="LDLMS"/>
+				<element value="sfwd_lms"/>
+				<element value="sfwd"/>
+				<element value="wpProQuiz"/>
+				<element value="wp_pro_quiz"/>
+			</property>
+		</properties>
+	</rule>
+
+	<rule ref="WordPress.WP.I18n">
+		<properties>
+			<property name="text_domain" type="array">
+				<element value="learndash"/>
+			</property>
+		</properties>
+	</rule>
+</ruleset>
