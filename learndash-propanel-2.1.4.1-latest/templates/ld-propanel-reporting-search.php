@@ -1,0 +1,1 @@
+<p class="search-wrap"><input class="tablesorter-search" type="search" placeholder="<?php echo $this->filter_search_placeholder; ?>" data-column="all"></p>

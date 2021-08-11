@@ -1,0 +1,619 @@
+@charset "utf-8";
+.arm_template_wrapper.arm_template_wrapper_profiletemplate3{
+    float:left;
+    width:100%;
+    text-align:center;
+}
+.arm_template_wrapper.arm_template_wrapper_profiletemplate3 .arm_template_container{
+    display: inline-block;
+    margin:0 auto;
+    float: none;
+    max-width:918px;
+}
+.arm_template_wrapper_profiletemplate3{
+    font-size: 14px;
+    line-height: normal;
+    color: #565765;
+}
+.arm_template_wrapper_profiletemplate3 .arm_profile_detail_wrapper{
+    border: none;
+    border-radius: 4px;
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    border-left:none;
+    border-right:none;
+}
+.arm_template_wrapper_profiletemplate3 .arm_profile_picture_block{
+    width: 100%;
+    height:280px;
+    display: block;
+    box-sizing: border-box;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    padding-bottom: 40px;
+    border-bottom: 5px solid;
+    text-align:left;
+}
+.arm_template_wrapper.arm_template_wrapper_profiletemplate3 .arm_template_container{
+    display: inline-block;
+}
+.arm_template_wrapper_profiletemplate3{
+    font-size: 14px;
+    line-height: normal;
+    color: #565765;
+}
+.arm_template_wrapper_profiletemplate3 .arm_profile_detail_wrapper{
+    border-radius: 4px;
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+}
+.arm_template_wrapper_profiletemplate3 .arm_profile_picture_block{
+    width: 100%;
+    height: 320px;
+    display: block;
+    box-sizing: border-box;
+    background-repeat: no-repeat;
+        background-size: 100% 320px;
+    position: relative;
+}
+.arm_template_wrapper_profiletemplate3 .arm_profile_picture_block .arm_template_loading{
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 9998;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+.arm_template_wrapper_profiletemplate3 .arm_profile_picture_block .arm_template_loading img{margin-top: 80px;}
+.arm_template_wrapper_profiletemplate3 .arm_profile_picture_block:hover .arm_cover_upload_container:not(.arm_profile){display: block;}
+.arm_template_wrapper_profiletemplate3 .arm_cover_upload_container{
+    display: none;
+    position: absolute;
+    right: 40px;
+    bottom: -1px;
+}
+.arm_template_wrapper_profiletemplate3 .arm_cover_upload_container .armCoverUploadBtnContainer{position: relative;float: left;}
+.arm_template_wrapper_profiletemplate3 i{vertical-align: middle;cursor: pointer;}
+.arm_template_wrapper_profiletemplate3 input{}
+.arm_template_wrapper_profiletemplate3 .arm_profile_picture_block_inner{
+    padding: 0px;
+    position: relative;
+    text-align:center;
+}
+.arm_template_wrapper_profiletemplate3 .arm_profile_picture_block .arm_user_avatar{
+    display: inline-block !important;
+    text-align: center;
+    vertical-align: top;
+    width: 140px;
+    max-height: 140px;
+    border: 5px #f1b136 solid;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -o-border-radius: 20px;
+    margin: 0;
+    position: absolute;
+    bottom: -10%;
+    left: 60px;
+    height:140px;
+}
+.arm_template_wrapper_profiletemplate3 .arm_profile_picture_block .arm_user_avatar img{
+    min-width: auto;
+    min-height: auto;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -o-border-radius: 20px;
+    background: transparent;
+    width: 130px;
+    height: 130px;
+}
+.arm_template_wrapper_profiletemplate3 .arm_profile_header_info{
+    width: 100%;
+    display: inline-block;
+    vertical-align: top;
+    padding: 20px;
+}
+.arm_template_wrapper_profiletemplate3 .arm_user_badges_detail{
+    float:left;
+    width:100%;
+    margin-bottom:20px;
+}
+.arm_template_wrapper_profiletemplate3 .arm_profile_name_link{
+    display: inline-block;
+    text-decoration: none;
+    font-size: 24px;
+    font-weight: bold;
+    color: #33334c;
+    padding-top: 5px;
+    margin-bottom:20px;
+    float:left;
+    width:100%;
+}
+
+
+.arm_template_wrapper_profiletemplate3 .arm_user_last_active_text{
+    float:left;
+    width:100%;
+    text-align:center;
+    color:#ffffff;
+}
+.arm_template_wrapper_profiletemplate3 .arm_profile_name_link a{color: #33334c;}
+.arm_template_wrapper_profiletemplate3 .arm_user_last_login_time{
+    font-size: 16px;
+    color: #33334c;
+    display: inline-block;
+    margin-right: 50px;
+}
+.arm_template_wrapper_profiletemplate3 .arm_user_last_login_time .arm_user_last_active_text{
+    font-size: 16px;
+    color: #33334c;
+    display: inline-block;
+    padding: 10px 0;
+}
+.arm_template_wrapper_profiletemplate3 .arm_user_last_login_time .arm_item_status_text{
+    margin-left: 15px;
+    padding: 5px 0 5px 15px;
+    border-left: 2px solid #D2D2D2;
+}
+.arm_template_wrapper_profiletemplate3 .arm_user_about_me{
+    display: block;
+    margin: 8px 2px;
+    font-size: 16px;
+    color: #33334c;
+}
+.arm_template_wrapper_profiletemplate3 .arm_profile_name_link a{
+    text-decoration: none;
+    border: 0;
+    outline: 0;
+}
+.arm_template_wrapper_profiletemplate3 .arm_profile_name_link a:hover{box-shadow: none;}
+.arm_template_wrapper_profiletemplate3 .arm_profile_tabs{
+    display: inline-block;
+    width: 100%;
+    border-width: 1px 0px 1px 0px;
+    background-color: #33334c;
+    padding: 10px 10px;
+    text-align: right;
+}
+.arm_template_wrapper_profiletemplate3 .arm_profile_tabs .arm_profile_tab_link{
+    padding: 8px 10px;
+    display: inline-block;
+    margin: 0 5px 0 0;
+    font-size: 16px;
+    color: #8893ad;
+    text-align: center;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -o-border-radius: 3px;
+}
+.arm_template_wrapper_profiletemplate3 .arm_profile_tabs .arm_profile_tab_count{
+    font-style: italic;
+}
+.arm_template_wrapper_profiletemplate3 .arm_general_info_container table.arm_profile_detail_tbl tr td:first-child {
+    width: 240px;
+    font-weight: bold !important;
+}
+.arm_template_wrapper_profiletemplate3 .arm_profile_tabs .arm_profile_tab_link:hover,
+.arm_template_wrapper_profiletemplate3 .arm_profile_tabs .arm_profile_tab_link.arm_profile_tab_link_active{
+    font-size: 16px;
+    background: #FFF;
+}
+.arm_template_wrapper_profiletemplate3 .arm_profile_tab_detail{
+    box-sizing: border-box;
+    padding: 10px 0;
+    margin-top: 70px;
+}
+.arm_template_wrapper_profiletemplate3 .arm_general_info_container,
+.arm_template_wrapper_profiletemplate3 .arm_member_listing_container,
+.arm_template_wrapper_profiletemplate3 .arm_activities_container{
+    border: 0;
+    padding: 0 30px 10px 30px;
+    width: 100%;
+}
+.arm_template_wrapper_profiletemplate3 .arm_general_info_container table{
+    width: 100%;
+    margin: 10px 0px 10px;
+    border: 0;
+    border-spacing: 0;
+    border-collapse: collapse;
+}
+.arm_template_wrapper_profiletemplate3 .arm_general_info_container table td{
+    padding: 12px 10px;
+    border: 0;
+    border-bottom: 1px solid #DDD;
+    text-align: left;
+}
+[dir="rtl"] .arm_template_wrapper_profiletemplate3 .arm_general_info_container table td{
+    text-align: right;
+}
+.arm_template_wrapper_profiletemplate3 .arm_member_listing_container .arm_member_listing_wrapper{
+    border: 0;
+}
+.arm_template_wrapper_profiletemplate3 .arm_member_listing_container .arm_member_info_block{
+    padding: 15px 0 10px;
+}
+.arm_template_wrapper_profiletemplate3 .arm_member_listing_container .arm_member_info_left{
+    max-width: 80px;
+    width: 80px;
+}
+.arm_template_wrapper_profiletemplate3 .arm_activity_item .arm_activity_avatar,
+.arm_template_wrapper_profiletemplate3 .arm_member_info_block .arm_user_avatar{
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    vertical-align: middle;
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    border: 1px solid #ededed;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+}
+.arm_template_wrapper_profiletemplate3 .arm_activities_container img.avatar,
+.arm_template_wrapper_profiletemplate3 .arm_member_info_block img.avatar{
+    display: block;
+    width: 100%;
+    min-width: 100%;
+    max-width: 100%;
+    height: 100%;
+    min-height: 100%;
+    max-height: 100%;  
+    margin: 0 auto;
+}
+.arm_template_wrapper_profiletemplate3 .arm_activities_container img.arm_avatar_small_width,
+.arm_template_wrapper_profiletemplate3 .arm_member_info_block img.arm_avatar_small_width{
+    width: auto;
+    min-width: auto;
+}
+.arm_template_wrapper_profiletemplate3 .arm_activities_container img.arm_avatar_small_height,
+.arm_template_wrapper_profiletemplate3 .arm_member_info_block img.arm_avatar_small_height{
+    height: auto;
+    min-height: auto;
+}
+.arm_template_wrapper_profiletemplate3 .arm_member_listing_container .arm_member_info_right,
+.arm_template_wrapper_profiletemplate3 .arm_activities_container .arm_activity_item_right{padding-top: 8px;}
+.arm_template_wrapper_profiletemplate3 .arm_member_listing_container .arm_member_info_right,
+.arm_template_wrapper_profiletemplate3 .arm_member_listing_container .arm_member_info_right *,
+.arm_template_wrapper_profiletemplate3 .arm_activities_container .arm_activity_item_right,
+.arm_template_wrapper_profiletemplate3 .arm_activities_container .arm_activity_item_right *{
+    font-size: 14px;
+    color: #7a7d84;
+}
+
+.arm_template_wrapper_profiletemplate3 .arm_member_listing_container .arm_member_info_right a,
+.arm_template_wrapper_profiletemplate3 .arm_activities_container .arm_activity_item_right a{color: #13b0a5;}
+.arm_template_wrapper_profiletemplate3 .arm_member_listing_container .arm_member_info_right a:hover,
+.arm_template_wrapper_profiletemplate3 .arm_activities_container .arm_activity_item_right a:hover{color: #f1b136;}
+.arm_template_wrapper_profiletemplate3 .arm_activities_container .arm_activities_pagination_block{text-align: right;}
+
+.arm_template_wrapper_profiletemplate3 .arm_transactions_container{padding: 10px;}
+
+.arm_template_wrapper_profiletemplate3 .arm_profile_tab_link.arm_profile_tab_link_active {color:#8893ad !important;}
+.arm_template_wrapper_profiletemplate3 .arm_profile_tab_link:hover {color:#8893ad !important;}
+.arm_template_wrapper_profiletemplate3 .arm_profile_form_rtl .arm_user_avatar {direction: rtl;float: right;left: auto;right: 40px;}
+.arm_template_wrapper_profiletemplate3 .arm_profile_form_rtl .arm_cover_upload_container {direction: ltr;left:40px;}
+.arm_template_wrapper_profiletemplate3 .arm_profile_form_rtl .arm_profile_tabs {direction:rtl;text-align: left;}
+
+.arm_template_wrapper_profiletemplate3 .social_profile_fields {
+    display: block;
+    float: none;
+    margin: 0px auto;
+    width: 100%;
+}
+.arm_template_wrapper_profiletemplate3 .social_profile_fields .arm_social_prof_div{
+    display: inline-block;
+    margin:0 5px 5px 0;
+}
+.arm_template_wrapper_profiletemplate3 .social_profile_fields .arm_social_prof_div > a {
+    background-color: #9B9DA9;
+    border: 2px solid #9B9DA9;
+    border-radius: 30px;
+    color: #ffffff;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 12px;
+    height: 30px;
+    line-height: normal;
+    margin:0;
+    min-height: 30px;
+    min-width: 30px;
+    padding: 2px;
+    position: relative;
+    text-align: center;
+    text-transform: lowercase !important;
+    vertical-align: middle;
+    width: 30px;
+}
+.arm_template_wrapper_profiletemplate3 .social_profile_fields .arm_social_prof_div > a::before {
+    position:relative;
+    top:3px;
+}
+
+.arm_template_wrapper_profiletemplate3 .arm_social_prof_div.arm_social_field_facebook > a:hover{
+    background-color: #ffffff;
+    border: 2px solid #3b5998;
+    color: #3b5998;
+}
+.arm_template_wrapper_profiletemplate3 .arm_social_prof_div.arm_social_field_twitter > a:hover{
+    background-color: #ffffff;
+    border: 2px solid #00abf0;
+    color: #00abf0;
+}
+
+.arm_template_wrapper_profiletemplate3 .arm_social_prof_div.arm_social_field_linkedin > a:hover{
+     background-color: #ffffff;
+    border: 2px solid #0177b5;
+    color: #0177b5;
+}
+
+.arm_template_wrapper_profiletemplate3 .arm_social_prof_div.arm_social_field_googleplush > a:hover{
+     background-color: #ffffff;
+    border: 2px solid #e94738;
+    color: #e94738;
+
+}
+
+.arm_template_wrapper_profiletemplate3 .arm_social_prof_div.arm_social_field_pinterest > a:hover{
+     background-color: #ffffff;
+    border: 2px solid #ca2026;
+    color: #ca2026;
+
+}
+
+.arm_template_wrapper_profiletemplate3 .arm_social_prof_div.arm_social_field_youtube > a:hover{
+    background-color: #ffffff;
+    border: 2px solid #E32C28;
+    color: #E32C28;
+}
+
+.arm_template_wrapper_profiletemplate3 .arm_social_prof_div.arm_social_field_reddit > a:hover{
+    background-color: #ffffff;
+    border: 2px solid #ff4500;
+    color: #ff4500;
+}
+
+.arm_template_wrapper_profiletemplate3 .arm_social_prof_div.arm_social_field_delicious > a:hover{
+     background-color: #ffffff;
+    border: 2px solid #2a96ff;
+    color: #2a96ff;
+
+}
+.arm_template_wrapper_profiletemplate3 .arm_social_prof_div.arm_social_field_tumblr > a:hover{
+    background-color: #ffffff;
+    border: 2px solid #36465d;
+    color: #36465d;
+}
+.arm_template_wrapper_profiletemplate3 .arm_social_prof_div.arm_social_field_vk > a:hover{
+    background-color: #ffffff;
+    border: 2px solid #324f77;
+    color: #324f77;
+}
+.arm_template_wrapper_profiletemplate3 .arm_social_prof_div.arm_social_field_instagram > a:hover{
+    background-color: #ffffff;
+    border: 2px solid #2a5b83;
+    color: #2a5b83;
+}
+.arm_template_wrapper_profiletemplate3 .arm_social_prof_div.arm_social_field_dribbble > a:hover{
+    background-color: #ffffff;
+    border: 2px solid #ea4c89;
+    color: #ea4c89;
+}
+.arm_template_wrapper_profiletemplate3 .arm_social_prof_div.arm_social_field_vine > a:hover{
+    background-color: #ffffff;
+    border: 2px solid #1cce94;
+    color: #1cce94;
+}
+.arm_template_wrapper_profiletemplate3 .arm_social_prof_div.arm_social_field_skype > a:hover{
+    background-color: #ffffff;
+    border: 2px solid #00aff0;
+    color: #00aff0;
+}
+.arm_template_wrapper_profiletemplate3 .arm_social_prof_div.arm_social_field_whatsapp > a:hover{
+    background-color: #ffffff;
+    border: 2px solid #00e676;
+    color: #00e676;
+}
+.arm_template_wrapper_profiletemplate3 .arm_social_prof_div.arm_social_field_tiktok > a:hover{
+    background-color: #ffffff;
+    border: 2px solid #010101;
+    color: #010101;
+}
+.arm_template_wrapper_profiletemplate3 table{
+    background: none !important;
+}
+.arm_template_wrapper_profiletemplate3 .arm_general_info_container table.arm_profile_detail_tbl tr{
+    float:left;
+    width:100%;
+    min-height:74px;
+    padding:0 !important;
+}
+.arm_template_wrapper_profiletemplate3 .arm_general_info_container table.arm_profile_detail_tbl tr td{
+    height:74px;
+    border-bottom:1px solid #cad0d5 !important;
+}
+::i-block-chrome,.arm_template_wrapper_profiletemplate3 .arm_general_info_container table.arm_profile_detail_tbl tr td{
+    height:50px;
+}
+.arm_template_wrapper_profiletemplate3 .arm_general_info_container table.arm_profile_detail_tbl tr td:first-child {
+    width:240px;
+    font-weight: bold !important;
+    text-align: right;
+}
+.arm_template_wrapper_profiletemplate3 .arm_general_info_container table.arm_profile_detail_tbl tr td:last-child{
+    width:72%;
+}
+
+
+/**/
+.arm_template_wrapper_profiletemplate3.mobile .arm_profile_picture_block{
+    height:360px;
+    background-position: top center !important;
+}
+
+.arm_template_wrapper_profiletemplate3.mobile .arm_user_avatar{
+    top:15px !important;
+    bottom:0px !important;
+    margin:0 auto !important;
+    left:50% !important;
+    position: absolute;
+    width:140px !important;
+    height:140px !important;
+    transform:translateX(-50%);
+    -webkit-transform:translateX(-50%);
+    -o-transform:translateX(-50%);
+    -moz-transform:translateX(-50%);
+}
+
+.arm_template_wrapper_profiletemplate3.mobile .arm_user_avatar img{
+    width:130px !important;
+    height:130px !important;
+    min-height: 130px !important;
+    max-height: 130px !important;
+}
+
+.arm_template_wrapper_profiletemplate3.mobile .social_profile_fields{
+    min-width:100%;
+    width:100%;
+    max-width: 100%;
+}
+.arm_template_wrapper_profiletemplate3.mobile .arm_profile_header_info{
+    margin-top:140px;
+}
+
+.arm_template_wrapper_profiletemplate3.mobile .arm_profile_name_link{
+    margin-bottom:15px;
+}
+
+.arm_template_wrapper_profiletemplate3.mobile .arm_user_badges_detail{
+    margin:0 0 20px !important;
+}
+/**/
+
+@media (max-width:1024px){
+    .arm_template_wrapper_profiletemplate3 .arm_user_avatar{
+        position: absolute !important;
+        width:140px !important;
+        height:140px !important;
+        left:40px !important;
+        bottom:-8% !important;
+        top:inherit !important;
+    }
+
+    .arm_template_wrapper_profiletemplate3 .arm_user_avatar img{
+        width:130px !important;
+        min-width:130px !important;
+        height: 130px !important;
+        min-height:130px !important;
+    }
+}
+
+@media (max-width:550px){
+    .arm_template_wrapper_profiletemplate3 .arm_profile_picture_block{
+        height:360px;
+    }
+
+    .arm_template_wrapper_profiletemplate3 .arm_user_avatar{
+        top:15px !important;
+        bottom:0px !important;
+        margin:0 auto !important;
+        left:0 !important;
+    }
+
+    .arm_template_wrapper_profiletemplate3 .arm_profile_header_info{
+        margin-top:140px;
+    }
+
+    .arm_template_wrapper_profiletemplate3 .arm_profile_name_link{
+        margin-bottom:15px;
+    }
+
+    .arm_template_wrapper_profiletemplate3 .arm_user_badges_detail{
+        margin:0 0 20px !important;
+    }
+}
+
+.arm_template_preview_popup.popup_wrapper.arm_mobile_wrapper .arm_template_wrapper_profiletemplate3 .arm_profile_picture_block{
+    height:360px;
+}
+
+.arm_template_preview_popup.popup_wrapper.arm_mobile_wrapper .arm_template_wrapper_profiletemplate3 .arm_user_avatar{
+    top:15px !important;
+    bottom:0px !important;
+    margin:0 auto !important;
+    left:0 !important;
+    position: absolute;
+    width:140px !important;
+    height:140px !important;
+}
+
+.arm_template_preview_popup.popup_wrapper.arm_mobile_wrapper .arm_template_wrapper_profiletemplate3 .arm_user_avatar img{
+    width:130px !important;
+    height:130px !important;
+    min-height: 130px !important;
+    max-height: 130px !important;
+}
+
+.arm_template_preview_popup.popup_wrapper.arm_tablet_wrapper .arm_template_wrapper_profiletemplate3 .arm_user_avatar{
+    width:140px !important;
+    height:140px !important;
+}
+
+.arm_template_preview_popup.popup_wrapper.arm_tablet_wrapper .arm_template_wrapper_profiletemplate3 .arm_user_avatar img{
+    width:130px !important;
+    height:130px !important;
+    max-width: 130px !important;
+    min-width: 130px !important;
+    max-height: 130px !important;
+    min-height: 130px !important;
+}
+
+.arm_template_preview_popup.popup_wrapper.arm_mobile_wrapper .arm_template_wrapper_profiletemplate3 .social_profile_fields{
+    min-width:100%;
+    width:100%;
+    max-width: 100%;
+}
+.arm_template_preview_popup.popup_wrapper.arm_mobile_wrapper .arm_template_wrapper_profiletemplate3 .arm_profile_header_info{
+    margin-top:140px;
+}
+
+.arm_template_preview_popup.popup_wrapper.arm_mobile_wrapper .arm_template_wrapper_profiletemplate3 .arm_profile_name_link{
+    margin-bottom:15px;
+}
+
+.arm_template_preview_popup.popup_wrapper.arm_mobile_wrapper .arm_template_wrapper_profiletemplate3 .arm_user_badges_detail{
+    margin:0 0 20px !important;
+}
+
+.arm_template_wrapper_profiletemplate3 .arm_user_avatar .arm_cover_upload_container{
+    left: 20px;
+    right: 0;
+    top: 45px;
+}
+
+.arm_template_wrapper_profiletemplate3 .arm_profile_picture_block .arm_user_avatar:hover .arm_profile{display: block;}
+
+
+.arm_template_wrapper_profiletemplate3 .arm_delete_profile_popup.arm_confirm_box{
+    left: 0px;
+    margin-top: 38px;
+}
+
+.arm_template_wrapper_profiletemplate3 .arm_delete_profile_popup.arm_confirm_box .arm_confirm_box_arrow{
+    float: left;
+    margin-left: 35px;
+}
+.arm_template_wrapper_profiletemplate3 .arm_profile_detail_tbl .hidden_section{
+    display: none; 
+}
+
+::i-block-chrome,.armCoverUploadBtn{
+    height : 29px !important;
+}

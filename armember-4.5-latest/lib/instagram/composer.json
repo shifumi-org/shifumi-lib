@@ -1,0 +1,24 @@
+{
+	"name": "andreyco/instagram",
+	"type": "library",
+	"description": "An easy-to-use PHP Class for accessing Instagram's API.",
+	"keywords": ["instagram", "api"],
+	"homepage": "https://github.com/Andreyco/Instagram-for-PHP",
+	"license": "BSD-4-Clause",
+	"authors": [
+		{
+			"name": "Andrej Badin",
+			"email": "contact@andrejbadin.com",
+			"homepage": "http://andrejbadin.com"
+		}
+	],
+	"require": {
+		"php": ">=5.3.0",
+		"ext-curl": "*"
+	},
+	"autoload": {
+		"psr-4": {
+			"Andreyco\\Instagram\\": "src/"
+		}
+	}
+}

@@ -1,0 +1,27 @@
+Added: COD payment method to manual payment method
+Added: filter hook for course selector class name
+Added: convert retroactive tool cron job to AJAX batch processing
+Added: filter hook for auto complete order
+Added: payment_complete hook to auto complete transaction
+Added: reset course access counter function and reset access counter when user is already enrolled
+Added: set course access from value from the start of a subscription instead of resetting it
+Added: 'any' param to subscription function to get all subscription orders
+Fixed: add course selector border CSS to override LD core styles
+Fixed: change remove increment count function hook for learndash_delete_user_data function
+Fixed: variation product subscription cancellation didn't unenroll users from courses
+Fixed: undefined index error warning
+Fixed: remove access on order refund for variable product
+Fixed: variation product autocomplete bug
+Fixed: AJAX retroactive tool
+Fixed: Change text domain
+Fixed: fatal error because wcs_order_contains_subscription() only accepts WC_Order object
+Improved: adjust select2 JS and CSS to hide select field on initial load
+Improved: change courses selector to use select2 to allow search and select UI
+Improved: change variable name for subscriptions related hook function
+Improved: Mark virtual and downloadable product as auto complete item
+Improved: update slug in translation class
+Improved: Lower per batch tools value to 10
+Improved: change null coalescing operator to make the plugin compatible with PHP < 7
+Improved: check if order has been paid before being auto completed
+Improved: Update load text domain function
+Improved: skip order that is part of subscription in retroactive tool

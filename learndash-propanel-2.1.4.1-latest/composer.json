@@ -1,0 +1,18 @@
+{
+	"name"       : "learndash/propanel",
+	"description": "LearnDash ProPanel - Easily manage and view your LearnDash LMS activity.",
+	"type"       : "wordpress-plugin",
+	"homepage"   : "https://www.learndash.com",
+	"license"    : "proprietary",
+	"require-dev": {
+		"dealerdirect/phpcodesniffer-composer-installer": "^0.7.0",
+		"phpcompatibility/phpcompatibility-wp": "^2",
+		"wp-coding-standards/wpcs": "^2",
+		"php-parallel-lint/php-parallel-lint": "^1.2",
+		"roave/security-advisories": "dev-latest"
+	},
+	"scripts": {
+		"phpcs": "vendor\\bin\\phpcs .",
+		"phplint": "vendor\\bin\\parallel-lint . --exclude vendor --exclude dev_scripts --exclude docs"
+	}
+}

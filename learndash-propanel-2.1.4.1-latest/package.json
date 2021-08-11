@@ -1,0 +1,52 @@
+{
+	"name": "learndash-propanel",
+	"description": "LearnDash ProPanel - Easily manage and view your LearnDash LMS activity.",
+	"repository": "https://github.com/learndash",
+	"private": true,
+	"version": "2.1.3",
+	"devDependencies": {
+		"@wordpress/eslint-plugin": "^7.1.0",
+		"@wordpress/browserslist-config": "^2.7.0",
+		"cssnano": "^4.1.7",
+		"cssnano-preset-advanced": "^4.0.5",
+		"eslint": "^7.5.0",
+		"postcss-cli": "^6.0.1",
+		"renamer": "^2.0.0",
+		"rimraf": "^2.6.2",
+		"rtlcss": "^2.5.0",
+		"terser": "^4.6.12"
+	},
+	"scripts": {
+		"make-pot": "wp i18n make-pot . languages/ld_propanel.pot",
+		"build": "npm run build:css && npm run build:js",
+		"build:css": "npm run rimraf:css && npm run rtl:css && npm run minify:css && npm run rename:rtlcss",
+		"build:js": "npm run rimraf:js && npm run minify:js",
+		"rtl:css": "rtlcss -d assets/css/ -e \"-rtl.css\"",
+		"rename:rtlcss": "renamer -f /-rtl.min.css/i -r \".min-rtl.css\" \"assets/css/*\"",
+		"minify:css": "postcss assets/css/*.css --use cssnano --dir=assets/css --ext min.css --verbose --no-map",
+		"minify:js": "npm run minify:js1",
+		"minify:js1": "terser assets/js/ld-propanel.js --output assets/js/ld-propanel.min.js --compress",
+		"rimraf:css": "rimraf assets/css/*.min.css && rimraf assets/css/*rtl.css",
+		"rimraf:js": "rimraf assets/js/*.min.js && rimraf assets/vendor/*.min.js",
+		"eslint": "eslint assets/js/*.js --ignore-pattern /assets/js/*.min.js",
+		"eslint:fix": "eslint assets/js/*.js --fix --ignore-pattern /assets/js/*.min.js"
+	},
+	"cssnano": {
+		"preset": "default"
+	},
+	"eslintConfig": {
+		"extends": [
+			"plugin:@wordpress/eslint-plugin/es5",
+			"plugin:@wordpress/eslint-plugin/i18n"
+		],
+		"root": true,
+		"env": {
+			"jest": true,
+			"node": true,
+			"es6": false
+		}
+	},
+	"browserslist": [
+		"extends @wordpress/browserslist-config"
+	]
+}
