@@ -3,13 +3,13 @@
  * Plugin Name: LearnDash LMS - WooCommerce Integration
  * Plugin URI: http://www.learndash.com/work/woocommerce/
  * Description: LearnDash LMS addon plugin to integrate LearnDash LMS with WooCommerce.
- * Version: 1.9.3.1
+ * Version: 1.9.3.2
  * Author: LearnDash
  * Author URI: http://www.learndash.com
  * Domain Path: /languages/
  * Text Domain: learndash-woocommerce
  * WC requires at least: 3.0.0
- * WC tested up to: 4.3.2
+ * WC tested up to: 5.6.0
  */
 
 class Learndash_WooCommerce {
@@ -91,7 +91,7 @@ class Learndash_WooCommerce {
 
 	public static function setup_constants() {
 		if ( ! defined( 'LEARNDASH_WOOCOMMERCE_VERSION' ) ) {
-			define( 'LEARNDASH_WOOCOMMERCE_VERSION', '1.9.3.1' );
+			define( 'LEARNDASH_WOOCOMMERCE_VERSION', '1.9.3.2' );
 		}
 
 		// Plugin file
@@ -275,11 +275,13 @@ class Learndash_WooCommerce {
 
 		// Delete the meta and bail if product is variable type
 		$product = wc_get_product( $id );
-		if ( in_array( $product->get_type(), [ 'variable', 'variable-subscription' ] ) ) {
-			delete_post_meta( $id, '_related_course' );
-			delete_post_meta( $id, '_related_group' );
-
-			return;
+		if ( false !== $product ) {
+			if ( in_array( $product->get_type(), [ 'variable', 'variable-subscription' ] ) ) {
+				delete_post_meta( $id, '_related_course' );
+				delete_post_meta( $id, '_related_group' );
+	
+				return;
+			}
 		}
 
 		if ( isset( $_POST['_related_course'] ) && ! empty( $_POST['_related_course'] ) ) {
