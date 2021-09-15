@@ -1,0 +1,1522 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap');
+@font-face {
+    font-family: 'wpDataTablesIcons' !important;
+    src: url(../../fonts/wpDataTablesIcons.eot);
+    src: url(../../fonts/wpDataTablesIcons.eot?#iefix) format('embedded-opentype'), url(../../fonts/wpDataTablesIcons.woff) format('woff'), url(../../fonts/wpDataTablesIcons.ttf) format('truetype'), url(../../fonts/wpDataTablesIcons.svg#wpDataTablesIcons) format('svg');
+}
+
+
+/* Icons */
+#toplevel_page_wpdatatables-dashboard div.wp-menu-image:before,
+.toplevel_page_wpdatatables-dashboard .ui-dialog-titlebar-close:before {
+    display: inline-block;
+    font-family: 'wpDataTablesIcons' !important;
+    font-style: normal;
+    font-weight: normal;
+    text-align: center;
+    text-decoration: none;
+    vertical-align: middle;
+    -webkit-font-smoothing: antialiased;
+}
+
+#toplevel_page_wpdatatables-dashboard div.wp-menu-image {
+    background-image: url(../../img/logo-large.png);
+    background-size: 25px 25px;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.wpdt-c.wpdatatables_page_wpdatatables-chart-wizard,
+.wpdt-c.wpdatatables_page_wpdatatables-add-ons,
+.wpdt-c.wpdatatables_page_wpdatatables-settings,
+.wpdt-c.wpdatatables_page_wpdatatables-administration,
+.wpdt-c.wpdatatables_page_wpdatatables-charts,
+.wpdt-c.toplevel_page_wpdatatables-dashboard,
+.wpdt-c.wpdatatables_page_wpdatatables-constructor {
+    background: #F1F1F1;
+}
+
+.wpdt-c #pick-range-table-container { width: 100%; max-height: 400px; overflow: auto;  }
+
+.wpdt-c #pick-range-table-container table td:hover {
+    cursor: pointer;
+    background-color: rgba(0, 140, 255, 0.06);
+}
+
+.wpdt-c #range_picked_info { padding: 3px; font-size: 10px; }
+
+.wpdt-c div.columns-block-selecter-buttons { margin: 5px }
+
+.wpdt-c div.wpDataTables div.strings-error,
+.wpdt-c div.wpDataTables div.min-columns-error,
+.wpdt-c div.wpDataTables div.max-columns-error {
+    font-weight: bold;
+    color: red;
+    margin: 5px;
+    padding: 3px;
+    border: 1px solid red;
+    border-radius: 3px;
+    background-color: #fdd;
+}
+
+div.mce-widget button i.mce-i-wpdatatable{
+    background-image: url(../../img/logo-large.png);
+    background-size: 23px 23px;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+div.mce-widget button i.mce-i-wpdatachart{
+    background-image: url(../../img/chart-icon.png);
+    background-size: 23px 23px;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.wpdt-c #formattingRules { padding: 10px }
+
+.wpdt-c #wpDataTablesSettings td.columnsBlock input.possibleValues {
+    display: none !important;
+}
+
+.wpdt-c #wpDataTablesSettings td.columnsBlock button.generatePossibleValues {
+    height: auto;
+    white-space: normal;
+    line-height: 20px;
+}
+
+.wpdt-c #wdtConfigureTableToolsBlock {
+    margin: 5px;
+    padding-top: 10px;
+    display: none;
+}
+
+.wpdt-c #wdtConfigureTableToolsBlock label {
+    display: block;
+    margin: 3px;
+}
+
+.wpdt-c #wdtSaveConfirmationPopover {
+    position: absolute;
+    background-color: rgba(78, 125, 1,0.7);
+    padding: 8px;
+    border-radius: 4px;
+    color: #fff;
+    top: -40px;
+    display: none;
+}
+.wpdt-c .wdt-datatables-admin-wrap {
+    margin: 0 0 0 -20px;
+    padding: 20px;
+}
+
+.wpdt-c div.addons_container {
+    position: relative;
+    background: #fff;
+    border: 1px solid #ccc;
+    padding: 10px;
+    overflow: hidden;
+}
+
+.wpdt-c div.wdt_addon_thumb {
+    width: 250px;
+    height: 180px;
+    background-color: #ddd;
+    position: relative;
+    opacity: 0.75;
+    transition: opacity 0.2s ease;
+}
+
+.wpdt-c div.wdt_addon_thumb:hover {
+    opacity: 1;
+}
+
+.wpdt-c div.wdt_addon {
+    float: left;
+    width: 250px;
+    height: 315px;
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid #eaeaea;
+    background-color: #f7f7f7;
+}
+
+.wpdt-c div.wdt_addon_title {
+    position: absolute;
+    bottom: 0;
+    background: rgba(0,0,0,0.5);
+    width: 100%;
+    height: 40px;
+    padding: 0;
+}
+
+.wpdt-c div.wdt_addon_title h3 {
+    color: #fff;
+    margin: 0;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+.wpdt-c div.wdt_addon_title h3 a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+.wpdt-c div.wdt_addon_title h3 a:hover {
+    color: #ddd;
+    text-decoration: underline;
+}
+
+.wpdt-c div.dt-button-info {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    width: 400px;
+    margin-top: -100px;
+    margin-left: -200px;
+    background-color: white;
+    border: 2px solid #111;
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.3);
+    border-radius: 3px;
+    text-align: center;
+    z-index: 21;
+}
+.wpdt-c div.dt-button-info h2 {
+    padding: 0.5em;
+    margin: 0;
+    font-weight: normal;
+    border-bottom: 1px solid #ddd;
+    background-color: #f3f3f3;
+}
+.wpdt-c div.dt-button-info > div {
+    padding: 1em;
+}
+
+.wpdt-c div.wdtDuplicateTableName {
+    margin: 30px 0;
+}
+.wpdt-c div.manual_duplicate {
+    margin: 20px  0;
+}
+
+.wpdt-c .duplicate_explain {
+    border: 1px solid #cccccc;
+    border-radius: 3px;
+    padding: 0px 10px;
+    margin-top: 20px;
+    text-align: justify;
+}
+
+.wpdt-c #wdt-range-picker checkbox {
+    display: inline-block;
+}
+
+.wpdt-c #wdt-range-picker .checkbox {
+    margin-bottom: 25px;
+    margin-top: 15px;
+}
+
+.wpdt-c #wdt-range-picker .pick-row .checkbox {
+    margin: 0;
+}
+
+.wpdt-c div.wpdt-tab {
+    background-color: #fff;
+}
+
+.wpdt-c #google_sheet_settings .wpdt-icon-filled-check {
+    font-size: 20px;
+    line-height: 20px;
+    color: #008CFF;
+}
+
+.wpdt-c #google_sheet_settings textarea {
+    background: #FFFFFF;
+    border: 1px solid #D7D9E2 !important;
+    box-sizing: border-box;
+    box-shadow: 0 1px 2px rgba(90, 108, 137, 0.08) !important;
+    border-radius: 3px;
+    padding: 10px 12px;
+}
+.wpdt-c .wdt-datatables-admin-wrap .bg-white {
+    background: #ffffff;
+}
+.wpdt-c .wdt-datatables-admin-wrap .wpdt-actions-bottom {
+    padding: 20px 0;
+    background: #F1F1F1;
+    margin: 0;
+}
+
+.wpdt-c .wdt-datatables-admin-wrap .tab-nav li {
+    margin-bottom: 0;
+}
+
+.wpdt-c .wdt-datatables-admin-wrap .card {
+    max-width: 100%;
+    padding: 0;
+    margin-top: 0;
+    border: none;
+}
+.wpdt-c .wdt-datatables-admin-wrap .wdt-table-constructor,
+.wpdt-c .wdt-datatables-admin-wrap .plugin-settings,
+.wpdt-c .wdt-datatables-admin-wrap .plugin-dashboard,
+.wpdt-c .wdt-datatables-admin-wrap .wdt-chart-wizard,
+.wpdt-c .wdt-datatables-admin-wrap .wdt-addons,
+.wpdt-c .wdt-datatables-admin-wrap .wdt-browse-table {
+    font-family: Inter;
+    margin-bottom: 0;
+    background: #F1F1F1 !important;
+    opacity: 1;
+}
+.wpdt-c .wdt-datatables-admin-wrap .wdt-table-settings {
+    font-family: Inter;
+    background: none !important;
+}
+.wpdt-c .wdt-datatables-admin-wrap .column-settings-pcolumn-sanel {
+    font-family: Inter;
+}
+.wpdt-c .wdt-datatables-admin-wrap .column-settings-panel div.wpDataTableContainer{
+    margin: 0;
+}
+.wpdt-c .wdt-datatables-admin-wrap .column-settings-panel  .wdtColumnOrigHeader {
+    background-color: #fff;
+    color:#304463;
+    font-size: 15px;
+    line-height: 20px;
+    padding: 0;
+}
+.wpdt-c .wdt-datatables-admin-wrap .column-settings-panel .wdt-column-calc-total-block,
+.wpdt-c .wdt-datatables-admin-wrap .column-settings-panel .wdt-column-calc-avg-block,
+.wpdt-c .wdt-datatables-admin-wrap .column-settings-panel .wdt-column-calc-min-block,
+.wpdt-c .wdt-datatables-admin-wrap .column-settings-panel .wdt-column-calc-max-block{
+    margin-bottom: 30px;
+}
+.wpdt-c .wdt-datatables-admin-wrap .column-settings-panel #wdt-column-calc-total-shortcode,
+.wpdt-c .wdt-datatables-admin-wrap .column-settings-panel #wdt-column-calc-avg-shortcode,
+.wpdt-c .wdt-datatables-admin-wrap .column-settings-panel #wdt-column-calc-min-shortcode,
+.wpdt-c .wdt-datatables-admin-wrap .column-settings-panel #wdt-column-calc-max-shortcode{
+    display: flex;
+}
+.wpdt-c .wdt-datatables-admin-wrap .column-settings-panel .wdt-copy-shortcode{
+    display: inline-block;
+    color: #304463;
+    cursor: pointer;
+}
+.wpdt-c .wdt-datatables-admin-wrap .column-settings-panel #wdt-calc-total-shortcode-id,
+.wpdt-c .wdt-datatables-admin-wrap .column-settings-panel #wdt-calc-avg-shortcode-id,
+.wpdt-c .wdt-datatables-admin-wrap .column-settings-panel #wdt-calc-min-shortcode-id,
+.wpdt-c .wdt-datatables-admin-wrap .column-settings-panel #wdt-calc-max-shortcode-id {
+    background: #F4F5F7;
+    border-radius: 0 3px 3px 0;
+    padding: 4px 8px;
+    border: none;
+    color: #172B4D;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 20px;
+}
+
+.wpdt-c .wdt-datatables-admin-wrap .column-settings-panel .wdt-copy-shortcode i{
+    padding: 4px 7px;
+    background: #EBECF0;
+    border-radius: 3px 0 0 3px;
+    line-height: 20px;
+}
+.wpdt-c .wdt-datatables-admin-wrap .column-settings-panel .wdt-column-add-conditional-formatting-rule{
+     font-weight: 500;
+     font-size: 14px;
+     line-height: 20px;
+     border: none;
+     background:#ffffff ;
+     color: #008CFF;
+     padding-left: 0;
+}
+.wpdt-c .wdt-datatables-admin-wrap .column-settings-panel .wdt-column-add-conditional-formatting-rule:hover{
+     color: #1572BF;
+}
+.wpdt-c .wdt-datatables-admin-wrap .wdt-manual-list-enter-block .btn.btn-xs,
+.wpdt-c .wdt-datatables-admin-wrap .wdt-manual-list-enter-block .btn.btn-xs:active,
+.wpdt-c .wdt-datatables-admin-wrap .wdt-manual-list-enter-block .btn.btn-xs:hover {
+    font-weight: 500;
+    font-size: 11px !important;
+    line-height: 20px !important;
+    color: #000000;
+    background: #FFFFFF;
+    border: 1px solid #DFE1E6;
+    box-sizing: border-box;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.06);
+    border-radius: 5px;
+    margin-left: 4px !important;
+}
+.wpdt-c .wdt-datatables-admin-wrap .wdt-manual-list-enter-block .btn i{
+    margin-right: 4px;
+    color: #F03E3E;
+}
+.wpdt-c .wdt-datatables-admin-wrap #wdt-add-column-modal input.form-control:not(.fc-alt),
+.wpdt-c .wdt-datatables-admin-wrap #wdt-duplicate-table-modal input.form-control:not(.fc-alt),
+.wpdt-c .wdt-datatables-admin-wrap #wdt-duplicate-chart-modal input.form-control:not(.fc-alt),
+.wpdt-c .wdt-datatables-admin-wrap #wdt-remove-column-modal input.form-control:not(.fc-alt),
+.wpdt-c .wdt-datatables-admin-wrap .wdt-table-constructor input.form-control:not(.fc-alt),
+.wpdt-c .wdt-datatables-admin-wrap .plugin-settings input.form-control:not(.fc-alt),
+.wpdt-c .wdt-datatables-admin-wrap .plugin-dashboard input.form-control:not(.fc-alt),
+.wpdt-c .wdt-datatables-admin-wrap .column-settings-panel input.form-control:not(.fc-alt),
+.wpdt-c .wdt-datatables-admin-wrap .wdt-table-settings input.form-control:not(.fc-alt),
+.wpdt-c .wdt-datatables-admin-wrap .wdt-chart-wizard input.form-control:not(.fc-alt),
+.wpdt-c .wdt-datatables-admin-wrap .wdt-addons input.form-control:not(.fc-alt),
+.wpdt-c .wdt-datatables-admin-wrap .wdt-browse-table input.form-control:not(.fc-alt){
+    font-size: 13px;
+    line-height: 20px;
+    color: #061938;
+    padding: 10px 12px;
+    background: #FFFFFF;
+    border: 1px solid #D7D9E2;
+    box-sizing: border-box;
+    box-shadow: 0 1px 2px rgba(90, 108, 137, 0.08) !important;
+    border-radius: 3px;
+    height: 40px !important;
+}
+.wpdt-c #wdt-remove-column-modal .bootstrap-select:not([class*=col-]):not(.input-group-btn),
+.wpdt-c #wdt-add-column-modal .bootstrap-select:not([class*=col-]):not(.input-group-btn),
+.wpdt-c #wdt-configure-foreign-key-modal .bootstrap-select:not([class*=col-]):not(.input-group-btn),
+.wpdt-c .wdt-datatables-admin-wrap .wdt-table-constructor .bootstrap-select:not([class*=col-]):not(.input-group-btn),
+.wpdt-c .wdt-datatables-admin-wrap .plugin-settings .bootstrap-select:not([class*=col-]):not(.input-group-btn),
+.wpdt-c .wdt-datatables-admin-wrap .plugin-dashboard .bootstrap-select:not([class*=col-]):not(.input-group-btn),
+.wpdt-c .wdt-datatables-admin-wrap .column-settings-panel .bootstrap-select:not([class*=col-]):not(.input-group-btn),
+.wpdt-c .wdt-datatables-admin-wrap .wdt-table-settings .bootstrap-select:not([class*=col-]):not(.input-group-btn),
+.wpdt-c .wdt-datatables-admin-wrap .wdt-chart-wizard .bootstrap-select:not([class*=col-]):not(.input-group-btn),
+.wpdt-c .wdt-datatables-admin-wrap .wdt-addons .bootstrap-select:not([class*=col-]):not(.input-group-btn),
+.wpdt-c .wdt-datatables-admin-wrap .wdt-browse-table .bootstrap-select:not([class*=col-]):not(.input-group-btn){
+    border: 1px solid #D7D9E2;
+    box-sizing: border-box;
+    box-shadow: 0px 1px 2px rgba(90, 108, 137, 0.08);
+    border-radius: 3px;
+    font-size: 14px;
+    line-height: 20px;
+    color: #061938;
+    height: 40px !important;
+}
+.wpdt-c #wdt-remove-column-modal .bootstrap-select:not([class*=col-]):not(.input-group-btn) button,
+.wpdt-c #wdt-add-column-modal .bootstrap-select:not([class*=col-]):not(.input-group-btn) button,
+.wpdt-c #wdt-configure-foreign-key-modal .bootstrap-select:not([class*=col-]):not(.input-group-btn) button,
+.wpdt-c .wdt-datatables-admin-wrap .wdt-table-constructor .bootstrap-select:not([class*=col-]):not(.input-group-btn) button,
+.wpdt-c .wdt-datatables-admin-wrap .plugin-settings .bootstrap-select:not([class*=col-]):not(.input-group-btn) button,
+.wpdt-c .wdt-datatables-admin-wrap .plugin-dashboard .bootstrap-select:not([class*=col-]):not(.input-group-btn) button,
+.wpdt-c .wdt-datatables-admin-wrap .column-settings-panel .bootstrap-select:not([class*=col-]):not(.input-group-btn) button,
+.wpdt-c .wdt-datatables-admin-wrap .wdt-table-settings .bootstrap-select:not([class*=col-]):not(.input-group-btn) button,
+.wpdt-c .wdt-datatables-admin-wrap .wdt-chart-wizard .bootstrap-select:not([class*=col-]):not(.input-group-btn) button,
+.wpdt-c .wdt-datatables-admin-wrap .wdt-addons .bootstrap-select:not([class*=col-]):not(.input-group-btn) button,
+.wpdt-c .wdt-datatables-admin-wrap .wdt-browse-table .bootstrap-select:not([class*=col-]):not(.input-group-btn) button{
+    padding: 10px 12px;
+}
+.wpdt-c #wdt-configure-foreign-key-modal .bootstrap-select > .btn-default,
+.wpdt-c #wdt-remove-column-modal .bootstrap-select > .btn-default,
+.wpdt-c #wdt-add-column-modal .bootstrap-select > .btn-default,
+.wpdt-c .wdt-datatables-admin-wrap .wdt-table-constructor .bootstrap-select > .btn-default,
+.wpdt-c .wdt-datatables-admin-wrap .plugin-settings .bootstrap-select > .btn-default,
+.wpdt-c .wdt-datatables-admin-wrap .plugin-dashboard .bootstrap-select > .btn-default,
+.wpdt-c .wdt-datatables-admin-wrap .column-settings-panel .bootstrap-select > .btn-default,
+.wpdt-c .wdt-datatables-admin-wrap .wdt-table-settings .bootstrap-select > .btn-default,
+.wpdt-c .wdt-datatables-admin-wrap .wdt-chart-wizard .bootstrap-select > .btn-default,
+.wpdt-c .wdt-datatables-admin-wrap .wdt-addons .bootstrap-select > .btn-default,
+.wpdt-c .wdt-datatables-admin-wrap .wdt-browse-table .bootstrap-select > .btn-default{
+    border-bottom: none !important;
+}
+.wpdt-c #wdt-configure-foreign-key-modal .bootstrap-select.btn-group .dropdown-menu > li.selected a,
+.wpdt-c #wdt-remove-column-modal .bootstrap-select.btn-group .dropdown-menu > li.selected a,
+.wpdt-c #wdt-add-column-modal .bootstrap-select.btn-group .dropdown-menu > li.selected a,
+.wpdt-c .wdt-datatables-admin-wrap .wdt-table-constructor .bootstrap-select.btn-group .dropdown-menu > li.selected a,
+.wpdt-c .wdt-datatables-admin-wrap .plugin-settings .bootstrap-select.btn-group .dropdown-menu > li.selected a,
+.wpdt-c .wdt-datatables-admin-wrap .plugin-dashboard .bootstrap-select.btn-group .dropdown-menu > li.selected a,
+.wpdt-c .wdt-datatables-admin-wrap .column-settings-panel .bootstrap-select.btn-group .dropdown-menu > li.selected a,
+.wpdt-c .wdt-datatables-admin-wrap .wdt-table-settings .bootstrap-select.btn-group .dropdown-menu > li.selected a,
+.wpdt-c .wdt-datatables-admin-wrap .wdt-chart-wizard .bootstrap-select.btn-group .dropdown-menu > li.selected a,
+.wpdt-c .wdt-datatables-admin-wrap .wdt-addons .bootstrap-select.btn-group .dropdown-menu > li.selected a,
+.wpdt-c .wdt-datatables-admin-wrap .wdt-browse-table .bootstrap-select.btn-group .dropdown-menu > li.selected a,
+.wpdt-c #wdt-configure-foreign-key-modal .bootstrap-select.btn-group .dropdown-menu > li > a:hover,
+.wpdt-c #wdt-remove-column-modal .bootstrap-select.btn-group .dropdown-menu > li > a:hover,
+.wpdt-c #wdt-add-column-modal .bootstrap-select.btn-group .dropdown-menu > li > a:hover,
+.wpdt-c .wdt-datatables-admin-wrap .wdt-table-constructor .bootstrap-select.btn-group .dropdown-menu > li > a:hover,
+.wpdt-c .wdt-datatables-admin-wrap .plugin-settings .bootstrap-select.btn-group .dropdown-menu > li > a:hover,
+.wpdt-c .wdt-datatables-admin-wrap .plugin-dashboard .bootstrap-select.btn-group .dropdown-menu > li > a:hover,
+.wpdt-c .wdt-datatables-admin-wrap .column-settings-panel .bootstrap-select.btn-group .dropdown-menu > li > a:hover,
+.wpdt-c .wdt-datatables-admin-wrap .wdt-table-settings .bootstrap-select.btn-group .dropdown-menu > li > a:hover,
+.wpdt-c .wdt-datatables-admin-wrap .wdt-chart-wizard .bootstrap-select.btn-group .dropdown-menu > li > a:hover,
+.wpdt-c .wdt-datatables-admin-wrap .wdt-addons .bootstrap-select.btn-group .dropdown-menu > li > a:hover,
+.wpdt-c .wdt-datatables-admin-wrap .wdt-browse-table .bootstrap-select.btn-group .dropdown-menu > li > a:hover,
+.wpdt-c #wdt-configure-foreign-key-modal .bootstrap-select.btn-group .dropdown-menu > li > a:focus,
+.wpdt-c #wdt-remove-column-modal .bootstrap-select.btn-group .dropdown-menu > li > a:focus,
+.wpdt-c #wdt-add-column-modal .bootstrap-select.btn-group .dropdown-menu > li > a:focus,
+.wpdt-c .wdt-datatables-admin-wrap .wdt-table-constructor .bootstrap-select.btn-group .dropdown-menu > li > a:focus,
+.wpdt-c .wdt-datatables-admin-wrap .plugin-settings .bootstrap-select.btn-group .dropdown-menu > li > a:focus,
+.wpdt-c .wdt-datatables-admin-wrap .plugin-dashboard .bootstrap-select.btn-group .dropdown-menu > li > a:focus,
+.wpdt-c .wdt-datatables-admin-wrap .column-settings-panel .bootstrap-select.btn-group .dropdown-menu > li > a:focus,
+.wpdt-c .wdt-datatables-admin-wrap .wdt-table-settings .bootstrap-select.btn-group .dropdown-menu > li > a:focus,
+.wpdt-c .wdt-datatables-admin-wrap .wdt-chart-wizard .bootstrap-select.btn-group .dropdown-menu > li > a:focus,
+.wpdt-c .wdt-datatables-admin-wrap .wdt-addons .bootstrap-select.btn-group .dropdown-menu > li > a:focus,
+.wpdt-c .wdt-datatables-admin-wrap .wdt-browse-table .bootstrap-select.btn-group .dropdown-menu > li > a:focus{
+    background-color: rgba(0, 140, 255, 0.06) !important;
+}
+.wpdt-c #wdt-configure-foreign-key-modal .bootstrap-select .bs-searchbox,
+.wpdt-c #wdt-add-column-modal .bootstrap-select .bs-searchbox,
+.wpdt-c #wdt-remove-column-modal .bootstrap-select .bs-searchbox,
+.wpdt-c .wdt-datatables-admin-wrap .wdt-table-constructor .bootstrap-select .bs-searchbox,
+.wpdt-c .wdt-datatables-admin-wrap .plugin-settings .bootstrap-select .bs-searchbox,
+.wpdt-c .wdt-datatables-admin-wrap .plugin-dashboard .bootstrap-select .bs-searchbox,
+.wpdt-c .wdt-datatables-admin-wrap .column-settings-panel .bootstrap-select .bs-searchbox,
+.wpdt-c .wdt-datatables-admin-wrap .wdt-table-settings .bootstrap-select .bs-searchbox,
+.wpdt-c .wdt-datatables-admin-wrap .wdt-chart-wizard .bootstrap-select .bs-searchbox,
+.wpdt-c .wdt-datatables-admin-wrap .wdt-addons .bootstrap-select .bs-searchbox,
+.wpdt-c .wdt-datatables-admin-wrap .wdt-browse-table .bootstrap-select .bs-searchbox,
+.wpdt-c #wdt-configure-foreign-key-modal .bootstrap-select .bs-searchbox input,
+.wpdt-c #wdt-add-column-modal .bootstrap-select .bs-searchbox input,
+.wpdt-c #wdt-remove-column-modal .bootstrap-select .bs-searchbox input,
+.wpdt-c .wdt-datatables-admin-wrap .wdt-table-constructor .bootstrap-select .bs-searchbox input,
+.wpdt-c .wdt-datatables-admin-wrap .plugin-settings .bootstrap-select .bs-searchbox input,
+.wpdt-c .wdt-datatables-admin-wrap .plugin-dashboard .bootstrap-select .bs-searchbox input,
+.wpdt-c .wdt-datatables-admin-wrap .column-settings-panel .bootstrap-select .bs-searchbox input,
+.wpdt-c .wdt-datatables-admin-wrap .wdt-table-settings .bootstrap-select .bs-searchbox input,
+.wpdt-c .wdt-datatables-admin-wrap .wdt-chart-wizard .bootstrap-select .bs-searchbox input,
+.wpdt-c .wdt-datatables-admin-wrap .wdt-addons .bootstrap-select .bs-searchbox input,
+.wpdt-c .wdt-datatables-admin-wrap .wdt-browse-table .bootstrap-select .bs-searchbox input {
+     background:#ffffff !important;
+}
+
+.wpdt-c #wdt-configure-foreign-key-modal .bootstrap-select > .btn-default.btn-group .dropdown-menu li a,
+.wpdt-c #wdt-add-column-modal .bootstrap-select > .btn-default.btn-group .dropdown-menu li a,
+.wpdt-c #wdt-remove-column-modal .bootstrap-select > .btn-default.btn-group .dropdown-menu li a,
+.wpdt-c .wdt-datatables-admin-wrap .wdt-table-constructor .bootstrap-select > .btn-default.btn-group .dropdown-menu li a,
+.wpdt-c .wdt-datatables-admin-wrap .plugin-settings .bootstrap-select > .btn-default.btn-group .dropdown-menu li a,
+.wpdt-c .wdt-datatables-admin-wrap .plugin-dashboard .bootstrap-select > .btn-default.btn-group .dropdown-menu li a,
+.wpdt-c .wdt-datatables-admin-wrap .column-settings-panel .bootstrap-select > .btn-default.btn-group .dropdown-menu li a,
+.wpdt-c .wdt-datatables-admin-wrap .wdt-table-settings .bootstrap-select > .btn-default.btn-group .dropdown-menu li a,
+.wpdt-c .wdt-datatables-admin-wrap .wdt-chart-wizard .bootstrap-select > .btn-default.btn-group .dropdown-menu li a,
+.wpdt-c .wdt-datatables-admin-wrap .wdt-addons .bootstrap-select > .btn-default.btn-group .dropdown-menu li a,
+.wpdt-c .wdt-datatables-admin-wrap .wdt-browse-table .bootstrap-select > .btn-default.btn-group .dropdown-menu li a{
+    font-family: Inter;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 20px;
+    color: #061938;
+}
+.wpdt-c #wdt-configure-foreign-key-modal .bootstrap-select > .btn-default:before,
+.wpdt-c #wdt-add-column-modal .bootstrap-select > .btn-default:before,
+.wpdt-c #wdt-remove-column-modal .bootstrap-select > .btn-default:before,
+.wpdt-c .wdt-datatables-admin-wrap .wdt-table-constructor .bootstrap-select > .btn-default:before,
+.wpdt-c .wdt-datatables-admin-wrap .plugin-settings .bootstrap-select > .btn-default:before,
+.wpdt-c .wdt-datatables-admin-wrap .plugin-dashboard .bootstrap-select > .btn-default:before,
+.wpdt-c .wdt-datatables-admin-wrap .column-settings-panel .bootstrap-select > .btn-default:before,
+.wpdt-c .wdt-datatables-admin-wrap .wdt-table-settings .bootstrap-select > .btn-default:before,
+.wpdt-c .wdt-datatables-admin-wrap .wdt-chart-wizard .bootstrap-select > .btn-default:before,
+.wpdt-c .wdt-datatables-admin-wrap .wdt-addons .bootstrap-select > .btn-default:before,
+.wpdt-c .wdt-datatables-admin-wrap .wdt-browse-table .bootstrap-select > .btn-default:before{
+    position: absolute;
+    top: 6px;
+    right: 0;
+    height: calc(100% - 2px);
+    width: 30px;
+    font-family: "wpDataTablesIcons";
+    font-weight: 900;
+    font-size: 15px;
+    content: "\f0e1";
+    pointer-events: none;
+    z-index: 5;
+    background-image: none;
+    background-size: 0;
+}
+.wpdt-c #wdt-input-url,
+.wpdt-c #wdt-constructor-input-url,
+.wpdt-c #wdt-configure-foreign-key-modal .form-group,
+.wpdt-c #wdt-add-column-modal .form-group,
+.wpdt-c #wdt-remove-column-modal .form-group,
+.wpdt-c .wdt-datatables-admin-wrap .wdt-table-constructor .form-group,
+.wpdt-c .wdt-datatables-admin-wrap .wdt-table-settings .form-group,
+.wpdt-c .wdt-datatables-admin-wrap .plugin-settings .form-group,
+.wpdt-c .wdt-datatables-admin-wrap .plugin-dashboard .form-group,
+.wpdt-c .wdt-datatables-admin-wrap .wdt-chart-wizard .form-group,
+.wpdt-c .wdt-datatables-admin-wrap .column-settings-panel .form-group,
+.wpdt-c .wdt-datatables-admin-wrap .wdt-addons .form-group,
+.wpdt-c .wdt-datatables-admin-wrap .wdt-browse-table .form-group{
+    margin-bottom: 16px;
+}
+.wpdt-c .wdt-datatables-admin-wrap .card.wdt-browse-table #wdt-datatables-browse-table{
+    background: #FFFFFF;
+    box-shadow: 0 3px 6px rgba(23, 43, 77, 0.08), 0 1px 1px rgba(23, 43, 77, 0.11);
+    border-radius: 3px;
+}
+.wdt-datatables-admin-wrap .wpdt-footer-links li a {
+    color: #5A6C89;
+    box-shadow: none;
+}
+.wpdt-c .wdt-input-data-source-type,
+.wpdt-c .wdt-constructor-preview-wp-table,
+.wpdt-c .input-path-block,
+.wpdt-c .mysql-settings-block,
+.wpdt-c .wdt-constructor-file-table-name-block,
+.wpdt-c #wdt-constructor-mysql-tables-block,
+.wpdt-c .wdt-constructor-post-types-block,
+.wpdt-c .wdt-constructor-mysql-query-table-name-block,
+.wpdt-c .wdt-constructor-wp-query-table-name-block,
+.wpdt-c .wdt-constructor-columns-container,
+.wpdt-c .wdt-constructor-table-name-and-columns,
+.wpdt-c .wdt-constructor-post-conditions-block,
+.wpdt-c .wdt-constructor-post-grouping-rules-block,
+.wpdt-c .wdt-constructor-post-types-relationship-block,
+.wpdt-c .wdt-constructor-post-types-define-relations-block,
+.wpdt-c .wdt-constructor-mysql-conditions-block,
+.wpdt-c .wdt-constructor-mysql-grouping-rules-block,
+.wpdt-c .wdt-constructor-mysql-tables-relationship-block,
+.wpdt-c .wdt-constructor-mysql-tables-define-relations-block {
+    background-color: #ffffff;
+}
+
+
+.wpdt-c #wdt-formula-editor-modal .modal-dialog,
+.wpdt-c #wdt-columns-list-modal .modal-dialog{
+    width: 698px !important;
+}
+.wpdt-c #wdt-columns-list-modal,
+.wpdt-c #wdt-duplicate-table-modal,
+.wpdt-c #wdt-duplicate-chart-modal,
+.wpdt-c #wdt-possible-values-merge-list-modal,
+.wpdt-c #wdt-formula-editor-modal,
+.wpdt-c #wdt-remove-column-modal,
+.wpdt-c #wdt-add-column-modal,
+.wpdt-c #wdt-configure-foreign-key-modal,
+.wpdt-c #wdt-backend-close-modal,
+.wpdt-c #wdt-rb-backend-close-modal,
+.wpdt-c #wdt-rb-shortcodes-modal,
+.wpdt-c #wdt-delete-modal {
+    font-family: Inter;
+    font-style: normal;
+    line-height: 20px;
+}
+
+.wpdt-c #wdt-columns-list-modal .modal-content,
+.wpdt-c #wdt-duplicate-chart-modal .modal-content,
+.wpdt-c #wdt-duplicate-table-modal .modal-content,
+.wpdt-c #wdt-possible-values-merge-list-modal .modal-content,
+.wpdt-c #wdt-formula-editor-modal .modal-content,
+.wpdt-c #wdt-configure-foreign-key-modal .modal-content,
+.wpdt-c #wdt-add-column-modal .modal-content,
+.wpdt-c #wdt-remove-column-modal .modal-content,
+.wpdt-c #wdt-rb-backend-close-modal .modal-content,
+.wpdt-c #wdt-rb-shortcodes-modal .modal-content,
+.wpdt-c #wdt-backend-close-modal .modal-content,
+.wpdt-c #wdt-delete-modal .modal-content,
+.wpdt-c #wdt-range-picker .modal-content {
+    background: #FFFFFF;
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0.04), 0 2px 6px rgba(0, 0, 0, 0.04), 0 16px 24px rgba(0, 0, 0, 0.06);
+    border-radius: 4px;
+}
+.wpdt-c #wdt-columns-list-modal .modal-title,
+.wpdt-c #wdt-duplicate-table-modal .modal-title,
+.wpdt-c #wdt-duplicate-chart-modal .modal-title,
+.wpdt-c #wdt-possible-values-merge-list-modal .modal-title,
+.wpdt-c #wdt-formula-editor-modal .modal-title,
+.wpdt-c #wdt-configure-foreign-key-modal .modal-title,
+.wpdt-c #wdt-add-column-modal .modal-title,
+.wpdt-c #wdt-remove-column-modal .modal-title,
+.wpdt-c #wdt-rb-backend-close-modal .modal-title,
+.wpdt-c #wdt-rb-shortcodes-modal .modal-title,
+.wpdt-c #wdt-backend-close-modal .modal-title,
+.wpdt-c #wdt-delete-modal .modal-title,
+.wpdt-c #wdt-range-picker .modal-title,
+.wpdt-c #wdt-error-modal .modal-title {
+    font-size: 15px;
+    line-height: 20px;
+    color: #061938;
+    font-weight: normal;
+}
+
+.wpdt-c #wdt-duplicate-table-modal .modal-content .modal-body,
+.wpdt-c #wdt-duplicate-chart-modal .modal-content .modal-body,
+.wpdt-c #wdt-duplicate-table-modal .modal-content .modal-header,
+.wpdt-c #wdt-duplicate-chart-modal .modal-content .modal-header,
+.wpdt-c #wdt-possible-values-merge-list-modal .modal-content .modal-body,
+.wpdt-c #wdt-possible-values-merge-list-modal .modal-content .modal-header,
+.wpdt-c #wdt-columns-list-modal .modal-content .modal-body,
+.wpdt-c #wdt-columns-list-modal .modal-content .modal-header,
+.wpdt-c #wdt-formula-editor-modal .modal-content .modal-body,
+.wpdt-c #wdt-formula-editor-modal .modal-content .modal-header,
+.wpdt-c #wdt-configure-foreign-key-modal .modal-content .modal-body,
+.wpdt-c #wdt-configure-foreign-key-modal .modal-content .modal-header,
+.wpdt-c #wdt-add-column-modal .modal-content .modal-body,
+.wpdt-c #wdt-add-column-modal .modal-content .modal-header,
+.wpdt-c #wdt-remove-column-modal .modal-content .modal-body,
+.wpdt-c #wdt-remove-column-modal .modal-content .modal-header,
+.wpdt-c #wdt-rb-backend-close-modal .modal-content .modal-body,
+.wpdt-c #wdt-rb-backend-close-modal .modal-content .modal-header,
+.wpdt-c #wdt-rb-shortcodes-modal .modal-content .modal-body,
+.wpdt-c #wdt-rb-shortcodes-modal .modal-content .modal-header,
+.wpdt-c #wdt-backend-close-modal .modal-content .modal-body,
+.wpdt-c #wdt-backend-close-modal .modal-content .modal-header ,
+.wpdt-c #wdt-delete-modal .modal-content .modal-body,
+.wpdt-c #wdt-delete-modal .modal-content .modal-header ,
+.wpdt-c #wdt-error-modal .modal-content .modal-body,
+.wpdt-c #wdt-error-modal .modal-content .modal-header,
+.wpdt-c #wdt-range-picker .modal-content .modal-header {
+    padding: 24px 24px 0 24px;
+}
+.wpdt-c #wdt-duplicate-table-modal .modal-content .modal-body small,
+.wpdt-c #wdt-duplicate-chart-modal .modal-content .modal-body small,
+.wpdt-c #wdt-possible-values-merge-list-modal .modal-content .modal-body small,
+.wpdt-c #wdt-rb-backend-close-modal .modal-content .modal-body small,
+.wpdt-c #wdt-rb-shortcodes-modal .modal-content .modal-body small,
+.wpdt-c #wdt-backend-close-modal .modal-content .modal-body small,
+.wpdt-c #wdt-delete-modal .modal-content .modal-body small{
+    font-size: 14px;
+    line-height: 24px;
+    color: #5A6C89;
+}
+
+.wpdt-c #wdt-duplicate-table-modal .modal-content .modal-header button,
+.wpdt-c #wdt-duplicate-chart-modal .modal-content .modal-header button,
+.wpdt-c #wdt-possible-values-merge-list-modal .modal-content .modal-header button,
+.wpdt-c #wdt-columns-list-modal .modal-content .modal-header button,
+.wpdt-c #wdt-formula-editor-modal .modal-content .modal-header button,
+.wpdt-c #wdt-configure-foreign-key-modal .modal-content .modal-header button,
+.wpdt-c #wdt-add-column-modal .modal-content .modal-header button,
+.wpdt-c #wdt-remove-column-modal .modal-content .modal-header button,
+.wpdt-c #wdt-backend-close-modal .modal-content .modal-header button,
+.wpdt-c #wdt-rb-backend-close-modal .modal-content .modal-header button,
+.wpdt-c #wdt-rb-shortcodes-modal .modal-content .modal-header button,
+.wpdt-c #wdt-delete-modal .modal-content .modal-header button,
+.wpdt-c #wdt-error-modal .modal-content .modal-header button,
+.wpdt-c #wdt-range-picker .modal-content .modal-header button {
+    font-size: 15px;
+    line-height: 20px;
+    color: #8796AF;
+}
+.wpdt-c #wdt-duplicate-table-modal .modal-content .modal-footer,
+.wpdt-c #wdt-duplicate-chart-modal .modal-content .modal-footer,
+.wpdt-c #wdt-possible-values-merge-list-modal .modal-content .modal-footer,
+.wpdt-c #wdt-columns-list-modal .modal-content .modal-footer,
+.wpdt-c #wdt-formula-editor-modal .modal-content .modal-footer,
+.wpdt-c #wdt-configure-foreign-key-modal .modal-content .modal-footer,
+.wpdt-c #wdt-add-column-modal .modal-content .modal-footer,
+.wpdt-c #wdt-remove-column-modal .modal-content .modal-footer,
+.wpdt-c #wdt-backend-close-modal .modal-content .modal-footer,
+.wpdt-c #wdt-rb-backend-close-modal .modal-content .modal-footer,
+.wpdt-c #wdt-rb-shortcodes-modal .modal-content .modal-footer,
+.wpdt-c #wdt-delete-modal .modal-content .modal-footer,
+.wpdt-c #wdt-error-modal .modal-content .modal-footer,
+.wpdt-c #wdt-range-picker .modal-content .modal-footer{
+    padding: 12px 24px 16px 24px;
+}
+
+.wpdt-c #separate-connection .wdt-my-sql-delete,
+.wpdt-c #wdt-columns-list-modal .modal-content .modal-footer .btn,
+.wpdt-c #wdt-possible-values-merge-list-modal .modal-content .modal-footer .btn,
+.wpdt-c #wdt-formula-editor-modal .modal-content .modal-footer .btn,
+.wpdt-c #wdt-rb-backend-close-modal .modal-content .modal-footer #wdt-rb-backend-continue-button,
+.wpdt-c #wdt-rb-backend-close-modal .modal-content .modal-footer #wdt-rb-backend-close-button,
+.wpdt-c #wdt-backend-close-modal .modal-content .modal-footer #wdt-backend-continue-button,
+.wpdt-c #wdt-backend-close-modal .modal-content .modal-footer #wdt-backend-close-button,
+.wpdt-c #wdt-backend-warning-modal .modal-content .modal-footer #wdt-backend-warning-continue-button,
+.wpdt-c #wdt-backend-warning-modal .modal-content .modal-footer #wdt-backend-clear-table-data-button,
+.wpdt-c #wdt-error-modal .modal-content .modal-footer button,
+.wpdt-c #wdt-delete-modal .modal-content .modal-footer .wdt-cancel-delete-button,
+.wpdt-c #wdt-delete-modal .modal-content .modal-footer .wdt-browse-delete-button,
+.wpdt-c #wdt-range-picker .modal-content .modal-footer button{
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    padding: 8px 16px;
+    border-radius: 5px;
+}
+
+.wpdt-c #wdt-rb-backend-close-modal .modal-content .modal-footer #wdt-rb-backend-continue-button,
+.wpdt-c #wdt-backend-close-modal .modal-content .modal-footer #wdt-backend-continue-button,
+.wpdt-c #wdt-backend-warning-modal .modal-content .modal-footer #wdt-backend-warning-continue-button,
+.wpdt-c #wdt-delete-modal .modal-content .modal-footer .wdt-cancel-delete-button,
+.wpdt-c #wdt-error-modal .modal-content .modal-footer button,
+.wpdt-c #wdt-range-picker .modal-content .modal-footer #wdt-cancel-range {
+    color: #253858;
+    background: #ffffff;
+    border: 1px solid #DFE1E6;
+    box-sizing: border-box;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.06);
+}
+.wpdt-c #wdt-rb-backend-close-modal .modal-content .modal-footer #wdt-rb-backend-continue-button:hover,
+.wpdt-c #wdt-backend-close-modal .modal-content .modal-footer #wdt-backend-continue-button:hover,
+.wpdt-c #wdt-backend-warning-modal .modal-content .modal-footer #wdt-backend-warning-continue-button:hover,
+.wpdt-c #wdt-delete-modal .modal-content .modal-footer .wdt-cancel-delete-button:hover,
+.wpdt-c #wdt-error-modal .modal-content .modal-footer button:hover,
+.wpdt-c #wdt-range-picker .modal-content .modal-footer #wdt-cancel-range:hover {
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.03), rgba(0, 0, 0, 0.03)), #FFFFFF;
+    border: 1px solid #DFE1E6;
+    box-sizing: border-box;
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.06);
+}
+.wpdt-c #separate-connection .wdt-my-sql-delete,
+.wpdt-c #wdt-rb-backend-close-modal .modal-content .modal-footer #wdt-rb-backend-close-button,
+.wpdt-c #wdt-backend-close-modal .modal-content .modal-footer #wdt-backend-close-button,
+.wpdt-c #wdt-backend-warning-modal .modal-content .modal-footer #wdt-backend-clear-table-data-button,
+.wpdt-c #wdt-remove-column-modal #wdt-remove-column-submit,
+.wpdt-c #wdt-delete-modal .modal-content .modal-footer .wdt-browse-delete-button{
+    background: #F03E3E;
+    color: #ffffff;
+}
+.wpdt-c #separate-connection .wdt-my-sql-delete:hover,
+.wpdt-c #wdt-backend-close-modal .modal-content .modal-footer #wdt-backend-close-button:hover,
+.wpdt-c #wdt-backend-warning-modal .modal-content .modal-footer #wdt-backend-clear-table-data-button:hover,
+.wpdt-c #wdt-rb-backend-close-modal .modal-content .modal-footer #wdt-rb-backend-close-button:hover,
+.wpdt-c #wdt-remove-column-modal #wdt-remove-column-submit:hover,
+.wpdt-c #wdt-delete-modal .modal-content .modal-footer .wdt-browse-delete-button:hover{
+    background: #E03131;
+}
+
+.wpdt-c #wdt-column-settings-buttons hr,
+.wpdt-c #wdt-possible-values-merge-list-modal .modal-content .modal-footer hr,
+.wpdt-c #wdt-columns-list-modal .modal-content .modal-footer hr,
+.wpdt-c #wdt-formula-editor-modal .modal-content .modal-footer hr,
+.wpdt-c #wdt-configure-foreign-key-modal .modal-content .modal-footer hr,
+.wpdt-c #wdt-add-column-modal .modal-content .modal-footer hr,
+.wpdt-c #wdt-remove-column-modal .modal-content .modal-footer hr,
+.wpdt-c #wdt-backend-close-modal .modal-content .modal-footer hr,
+.wpdt-c #wdt-delete-modal .modal-content .modal-footer hr,
+.wpdt-c #wdt-error-modal .modal-content .modal-footer hr,
+.wpdt-c #wdt-rb-backend-close-modal .modal-content .modal-footer hr,
+.wpdt-c #wdt-rb-shortcodes-modal .modal-content .modal-footer hr,
+.wpdt-c #wdt-range-picker .modal-content .modal-footer hr{
+    margin-top: 0;
+    margin-bottom: 16px;
+}
+
+.wpdt-c #wpdt-inline-logo {
+    width: 110px;
+    height: 35px;
+    padding-right: 10px;
+}
+.wpdt-c .wdt-table-setting #wpdt-inline-logo {
+    display: block;
+}
+
+.wpdt-c .wdt-datatables-admin-wrap .tab-nav li a:active,
+.wpdt-c .wdt-datatables-admin-wrap .tab-nav li a:focus,
+.wpdt-c .wdt-datatables-admin-wrap .tab-nav li a:hover  {
+    box-shadow: none !important;
+}
+
+.wpdt-c .wdt-datatables-admin-wrap .bootstrap-select.btn-group .dropdown-menu li a {
+    box-shadow: none !important;
+    text-transform: none !important;;
+}
+
+.wpdt-c .wdt-datatables-admin-wrap .bootstrap-select > .btn-default {
+    text-transform: none;
+}
+
+.wpdt-c .wdt-datatables-admin-wrap table th {
+    -o-transition: none !important;
+    -ms-transition: none !important;
+    -moz-transition: none !important;
+    -webkit-transition: none !important;
+    transition: none !important;
+}
+
+.wpdt-c .wdt-datatables-admin-wrap .bootstrap-tagsinput {
+    border-left: 0;
+    border-right: 0;
+    border-top: 0;
+    border-bottom: 0;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    padding: 0;
+    box-shadow: none;
+    width: 100%;
+}
+.wpdt-c #wdt-add-column-modal .bootstrap-tagsinput {
+    max-height: 47px;
+    padding: 3px 0 3px 12px;
+}
+.wpdt-c #wdt-add-column-modal .wdt-add-column-possible-values-block .form-group {
+    height: inherit;
+    max-height: 50px;
+    overflow-y: auto;
+    border: 1px solid #D7D9E2;
+    box-sizing: border-box;
+    box-shadow: 0 1px 2px rgba(90, 108, 137, 0.08);
+    border-radius: 3px;
+    color: #061938;
+}
+.wpdt-c #wdt-add-column-modal .bootstrap-tagsinput .tag {
+    color: #5A6C89 ;
+    background-color: #F3F3FA;
+    border-radius: 2px;
+    display: inline-block;
+    margin-bottom: 4px;
+    font-size: 12px;
+}
+
+.wpdt-c .wdt-datatables-admin-wrap div.toggle-switch {
+    width: 100%;
+    position: relative;
+}
+.wpdt-c .wdt-datatables-admin-wrap div.toggle-switch label{
+    border: 1px solid #EBECF0;
+    box-sizing: border-box;
+    border-radius: 3px;
+    padding: 9px 45px 9px 12px;
+    width: 100%;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 20px;
+    color: #000;
+    min-height: 40px;
+}
+.wpdt-c .wdt-datatables-admin-wrap div.toggle-switch input[type="checkbox"]:checked + label {
+    border: 1px solid rgba(0, 140, 255, 0.5);
+    background: rgba(0, 140, 255, 0.02);
+}
+.wpdt-c .wdt-datatables-admin-wrap div.toggle-switch .ts-helper {
+    display: none;
+}
+
+.wpdt-c .wdt-preload-layer {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(255,255,255,1);
+    text-align: center;
+    z-index: 100;
+}
+
+.wpdt-c .wdt-preload-layer div.preloader {
+    top: 50%;
+}
+
+.wpdt-c .wdt-color-picker {
+    width: 100%;
+}
+.wpdt-c #wpdt-table-editor img{
+   max-width: 100%;
+    height: auto;
+}
+.wpdt-c #wpdt-table-editor .ht_clone_left table tbody tr th{
+   vertical-align: middle;
+}
+
+.wpdt-c .wpcolorpicker-icon.input-group-addon {
+    position: absolute;
+    right: 1px;
+    top: 6px;
+    z-index: 4;
+    height: 25px;
+    width: 25px;
+    padding: 0;
+    pointer-events: none;
+}
+.wpdt-c #column-conditional-formatting-settings .wdt-conditional-formatting-rule .wpcolorpicker-icon.input-group-addon {
+    right: 13px;
+}
+
+.wpdt-c .wpcolorpicker-icon.add-on>i,
+.wpdt-c .wpcolorpicker-icon.input-group-addon>i {
+    height: 28px;
+    width: 28px;
+    display: inline-block;
+    cursor: pointer;
+    vertical-align: text-top;
+}
+.wpdt-c .wdt-conditional-formatting-rule {
+    padding-top: 12px;
+    padding-bottom: 4px;
+    border-top: 1px solid #EBECF0;
+    color: #061938;
+}
+.wpdt-c .wdt-conditional-formatting-rule .btn-default,
+.wpdt-c .wdt-conditional-formatting-rule .btn-default:before {
+    color: #061938;
+}
+
+.wpdt-c .wdt-conditional-formatting-rule:first-child {
+    border-top: none !important;
+}
+.wpdt-c .wdt-conditional-formatting-rule .wdt-last{
+   padding-right: 0;
+}
+.wpdt-c .wdt-conditional-formatting-rule .colorpicker-element {
+    margin-left: 15px;
+}
+.wpdt-c .wdt-conditional-formatting-rule .colorpicker-element .wpcolorpicker-icon.input-group-addon>i {
+    position: absolute;
+}
+.wpdt-c .wdt-conditional-formatting-rule .col-sm-3,
+.wpdt-c .wdt-conditional-formatting-rule .col-sm-2,
+.wpdt-c .wdt-conditional-formatting-rule .col-sm-1{
+    padding-left: 0 !important;
+}
+.wpdt-c .wdt-conditional-formatting-rule .col-sm-1 label{
+    padding-top: 9px;
+    color: #061938;
+}
+.wpdt-c .colorpicker.colorpicker-visible {
+    top: 32px;
+    left: inherit;
+    padding: 4px;
+    min-width: 146px;
+    margin: 7px 0 0 -7px;
+    height: auto;
+    width: auto;
+    background: #fff;
+    overflow: inherit;
+}
+
+.wpdt-c span.wpcolorpicker-icon>i {
+    border: 1px solid #ddd;
+}
+
+.wpdt-c .btn.btn-default.wdt-documentation,
+.wpdt-c .btn.btn-default.wdt-documentation:hover,
+.wpdt-c .btn.btn-default.wdt-documentation:focus {
+    border: none;
+    padding: 8px 16px;
+    border-radius: 6px;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    color: #253858;
+}
+.wpdt-c  .card.wdt-table-settings .wdt-table-settings-col {
+    border-top: 1px solid #DFE1E6;
+}
+
+.wpdt-c .card.wdt-table-settings .wdt-table-settings-col .btn.btn-default.wdt-documentation {
+    margin-top: 18px;
+}
+.wpdt-c .wdt-documentation:hover {
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.03), rgba(0, 0, 0, 0.03)), #FFFFFF !important;
+}
+.wpdt-c .btn.btn-default.wdt-documentation i {
+    margin-right: 8px;
+}
+.wpdt-c .wdt-datatables-admin-wrap .bootstrap-select .btn{
+    padding: 0;
+}
+
+.wpdt-c .wdt-datatables-admin-wrap .card .card-header.wdt-admin-card-header {
+    padding: 0 0 14px 0;
+}
+.wpdt-c .wdt-datatables-admin-wrap .card.column-settings .card-header.wdt-admin-card-header {
+    background: #ffffff !important;
+    border-bottom: 1px solid #EBECF0;
+    padding: 20px 24px;
+}
+.wpdt-c .wdt-datatables-admin-wrap .card.column-settings .card-header.wdt-admin-card-header h2{
+    font-family: Inter;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    color: #304463;
+}
+
+.wpdt-c .wdt-datatables-admin-wrap .card .card-header.wdt-admin-card-header .actions {
+    right: 0;
+    bottom: 0;
+    top: unset;
+}
+.wpdt-c .wdt-datatables-admin-wrap .card .card-header.wdt-admin-card-header .actions li {
+    margin-bottom: 12px;
+}
+
+.wpdt-c .wdt-datatables-admin-wrap .btn:disabled {
+    opacity: .5;
+}
+
+.wpdt-c .wdt-datatables-admin-wrap .alert .wdt-alert-title:hover,
+.wpdt-c .wdt-datatables-admin-wrap .alert .wdt-alert-subtitle:hover {
+    cursor: text;
+}
+.wpdt-c .wdt-datatables-admin-wrap .alert .wdt-alert-title,
+.wpdt-c .wdt-datatables-admin-wrap .alert .wdt-alert-subtitle {
+    font-size: 12px;
+    line-height: 16px;
+    color: #091E6F;
+    font-weight: 500;
+}
+.wpdt-c .wdt-datatables-admin-wrap .alert .wdt-alert-title {
+    margin-left: 10px;
+    font-weight: bold;
+}
+.wpdt-c .wdt-datatables-admin-wrap .alert .wdt-alert-subtitle {
+    display: inline-block;
+    padding-left: 29px;
+}
+
+.wpdt-c button#wp-my-sql-add,
+.wpdt-c .wdt-store-activate-plugin.btn-primary,
+.wpdt-c button.wdt-my-sql-test {
+    margin-top: 3px;
+}
+.wpdt-c .wdt-store-activate-plugin.btn-danger{
+    margin-top: 1px;
+}
+
+
+.wpdt-c button.wdt-collapse-table-settings,
+.wpdt-c button#wp-my-sql-add,
+.wpdt-c .wdt-store-activate-plugin.btn-primary,
+.wpdt-c .wdt-store-activate-plugin.btn-danger,
+.wpdt-c button#wdt-envato-deactivation-wpdatatables,
+.wpdt-c button.wdt-my-sql-test,
+.wpdt-c button.reset-color-settings,
+.wpdt-c button#wdt-browse-button,
+.wpdt-c button#wdt-constructor-browse-button,
+.wpdt-c button.wdt-cancel-column-settings,
+.wpdt-c button.wdt-backend-close,
+.wpdt-c button.wdt-reset-customize-options,
+.wpdt-c button.wdt-backend-chart-close,
+.wpdt-c button.wdt-foreign-key-close,
+.wpdt-c button#wdt-foreign-key-open,
+.wpdt-c button.wdt-save-foreign-key-rule,
+.wpdt-c button.wdt-column-apply,
+.wpdt-c #wdt-duplicate-table-modal .btn-danger,
+.wpdt-c #wdt-duplicate-chart-modal .btn-danger,
+.wpdt-c #wdt-add-column-modal .btn-danger,
+.wpdt-c #wdt-remove-column-modal .btn-danger,
+.wpdt-c button#wdt-add-column-submit,
+.wpdt-c button#wdt-remove-column-submit,
+.wpdt-c #wdt-columns-list-modal #wdt-apply-columns-list,
+.wpdt-c #wdt-formula-editor-modal .wdt-save-formula,
+.wpdt-c button.wdt-apply {
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    padding: 8px 16px;
+    border-radius: 5px;
+    box-sizing: border-box;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.06) !important;
+    margin-left: 8px;
+}
+.wpdt-c button#wdt-browse-button,
+.wpdt-c button#wdt-constructor-browse-button {
+    margin-top: 2px;
+}
+.wpdt-c .wdt-store-activate-plugin.btn-primary,
+.wpdt-c .wdt-store-activate-plugin.btn-danger,
+.wpdt-c button#wdt-foreign-key-open{
+    margin-left: 0;
+}
+
+.wpdt-c button.wdt-cancel-column-settings,
+.wpdt-c #wdt-duplicate-table-modal .btn-danger,
+.wpdt-c #wdt-duplicate-chart-modal .btn-danger,
+.wpdt-c #wdt-configure-foreign-key-modal .btn-danger,
+.wpdt-c #wdt-add-column-modal .btn-danger,
+.wpdt-c #wdt-remove-column-modal .btn-danger,
+.wpdt-c #wdt-columns-list-modal .btn-danger,
+.wpdt-c #wdt-formula-editor-modal .btn-danger,
+.wpdt-c #wdt-possible-values-merge-list-modal .btn-danger,
+.wpdt-c #reset-color-settings,
+.wpdt-c button.wdt-backend-close,
+.wpdt-c button.wdt-reset-customize-options,
+.wpdt-c button.wdt-backend-chart-close {
+    background-color: #ffffff!important;
+    color: #253858 !important;
+    border-color: #DFE1E6 !important;
+    border: 1px solid;
+}
+
+.wpdt-c button.wdt-cancel-column-settings:hover,
+.wpdt-c #wdt-duplicate-table-modal .btn-danger:hover,
+.wpdt-c #wdt-duplicate-chart-modal .btn-danger:hover,
+.wpdt-c #wdt-configure-foreign-key-modal .btn-danger:hover,
+.wpdt-c #wdt-add-column-modal .btn-danger:hover,
+.wpdt-c #wdt-remove-column-modal .btn-danger:hover,
+.wpdt-c #wdt-columns-list-modal .btn-danger:hover,
+.wpdt-c #wdt-formula-editor-modal .btn-danger:hover,
+.wpdt-c #wdt-possible-values-merge-list-modal .btn-danger:hover,
+.wpdt-c #reset-color-settings:hover,
+.wpdt-c button.wdt-backend-close:hover,
+.wpdt-c button.wdt-reset-customize-options:hover,
+.wpdt-c button.wdt-backend-chart-close:hover {
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.03), rgba(0, 0, 0, 0.03)), #FFFFFF;
+    border: 1px solid #DFE1E6;
+    box-sizing: border-box;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.06);
+}
+
+.wpdt-c button.wdt-collapse-table-settings {
+    background-color: #ffffff !important;
+    color: #304463 !important;
+    border: 1px solid rgba(0, 140, 255, 0.75) !important;
+}
+.wpdt-c button.wdt-collapse-table-settings:hover {
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.03), rgba(0, 0, 0, 0.03)), #FFFFFF !important;
+    border: 1px solid #DFE1E6;
+    box-sizing: border-box;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.06);
+}
+.wpdt-c button.wdt-collapse-table-settings i {
+    margin-left: 4px;
+}
+
+.wpdt-c button#wp-my-sql-add,
+.wpdt-c button.wdt-my-sql-test {
+    margin-left: 0;
+}
+
+.wpdt-c #wdt-formula-editor-modal .wdt-preview-formula {
+    font-size: 14px;
+    line-height: 20px;
+    color: #091E6F;
+    background: linear-gradient(0deg, rgba(0, 140, 255, 0.08), rgba(0, 140, 255, 0.08)), #FFFFFF;
+    border: 1px solid rgba(0, 140, 255, 0.14);
+    box-sizing: border-box;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.06);
+    border-radius: 5px;
+}
+.wpdt-c #wdt-formula-editor-modal .wdt-preview-formula:hover {
+     background: linear-gradient(0deg, rgba(0, 140, 255, 0.13), rgba(0, 140, 255, 0.13)), #FFFFFF;
+     border: 1px solid rgba(0, 140, 255, 0.14);
+     box-sizing: border-box;
+     box-shadow: 0 1px 1px rgba(0, 0, 0, 0.06);
+}
+.wpdt-c #separate-connection .wdt-my-sql-delete i,
+.wpdt-c .wdt-store-activate-plugin i,
+.wpdt-c .wdt-envato-activation .wdt-envato-deactivation-button i,
+.wpdt-c #wdt-backend-close-modal .modal-content .modal-footer #wdt-backend-close-button i,
+.wpdt-c #wdt-backend-warning-modal .modal-content .modal-footer #wdt-backend-clear-table-data-button i,
+.wpdt-c #wdt-delete-modal .modal-content .modal-footer .wdt-cancel-delete-button i{
+    margin-right: 8px;
+    vertical-align: baseline;
+}
+.wpdt-c button.wdt-column-apply i,
+.wpdt-c button.wdt-apply i {
+    margin-right: 8px;
+}
+.wpdt-c #wdt-column-settings-buttons button.wdt-column-apply i,
+.wpdt-c #wdt-columns-list-modal .modal-content .modal-footer #wdt-apply-columns-list i,
+.wpdt-c .wpdt-actions-bottom button.wdt-apply i,
+.wpdt-c button#wdt-add-column-submit i,
+.wpdt-c button.duplicate-chart-button i,
+.wpdt-c button.wdt-save-foreign-key-rule i,
+.wpdt-c button.wdt-save-formula i,
+.wpdt-c button#wdt-remove-column-submit i,
+.wpdt-c button.duplicate-table-button i,
+.wpdt-c button.wdt-preview-formula i {
+    margin-right: 4px;
+}
+.wpdt-c .wdt-column-settings i.wpdt-icon-cog {
+    vertical-align: middle;
+}
+.wpdt-c .wdt-datatables-admin-wrap i.wpdt-icon-info-circle-full,
+.wpdt-c .wdt-datatables-admin-wrap i.wpdt-icon-info-circle-thin,
+.wpdt-c .wdt-datatables-admin-wrap i.wpdt-icon-info-circle {
+    font-size: 15px;
+    line-height: 20px;
+}
+.wpdt-c .wdt-datatables-admin-wrap i.wpdt-icon-info-circle-thin,
+.wpdt-c .wdt-datatables-admin-wrap i.wpdt-icon-info-circle {
+    color: #8796AF;
+    vertical-align: middle;
+}
+.wpdt-c .wdt-datatables-admin-wrap i.wpdt-icon-info-circle-full {
+    color: #008CFF;
+}
+
+.wpdt-c .wdt-datatables-admin-wrap .card .card-header.wdt-admin-card-header {
+    border-bottom: none;
+}
+.wpdt-c .wdt-datatables-admin-wrap .card.wdt-table-settings .card-header.wdt-admin-card-header #wpdt-inline-logo{
+    display: block;
+    margin-bottom: 5px;
+}
+
+
+.wpdt-c #adminmenuback {
+    z-index: 100;
+}
+
+.wpdt-c .wpdt-forminator-news,
+.wpdt-c .wpdt-md-news{
+    margin: 10px 0 !important;
+    font-size: 15px;
+}
+
+.wpdt-c .wpdt-forminator-news .wdt-forminator-link {
+    text-decoration: none;
+}
+.wpdt-c .wpdt-forminator-news .wdt-forminator-link:hover {
+    text-decoration: underline;
+}
+.wpdt-c .wpdt-forminator-news-notice{
+    background: #091D70 ;
+    color: #ffffff;
+}
+
+.wpdt-c .wpdt-md-news-notice {
+    background: #2196F3 ;
+    color: #ffffff;
+}
+.wpdt-c .notice-info {
+    border-left-color: #091D70 !important;
+}
+
+.wpdt-c .notice-info.wpdt-forminator-news-notice {
+    border-left-color: #ff8c00 !important;
+}
+.wpdt-c .wpdt-forminator-news-notice a,
+.wpdt-c .wpdt-forminator-news-notice a:hover,
+.wpdt-c .wpdt-md-news-notice a,
+.wpdt-c .wpdt-md-news-notice a:hover {
+    color: #ffffff;
+    text-decoration: underline;
+}
+
+.wpdt-c .wpdt-forminator-news-notice .notice-dismiss:before,
+.wpdt-c .wpdt-md-news-notice .notice-dismiss:before{
+    color: #ffffff;
+    position: absolute;
+    top: 13px;
+    right: 5px;
+}
+
+.wpdt-c .wpdt-forminator-news-notice .notice-dismiss:hover:before,
+.wpdt-c .wpdt-md-news-notice .notice-dismiss:hover:before{
+    color: red;
+}
+.wpdt-c .wdt-rating-notice {
+    position: relative;
+    overflow: hidden;
+    padding: 17px 16px 16px;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    background: #FFFFFF;
+    border: 1px solid #DFE1E6;
+    box-sizing: border-box;
+    box-shadow: 0 3px 6px rgba(23, 43, 77, 0.08);
+    border-radius: 3px;
+}
+
+.wpdt-c .wdt-rating-buttons {
+    position: absolute;
+    right: 16px;
+    top: 40px;
+}
+
+.wpdt-c .wdt-rating-buttons li{
+    display: block;
+    outline: none;
+    text-align: right;
+    margin: 0 0 4px 0;
+}
+
+.wpdt-c .wdt-rating-button {
+    border-radius: 5px;
+    text-transform: none;
+    position: relative;
+    color: #fff;
+    cursor: pointer;
+    margin: 0;
+    display: inline-block;
+    box-sizing: border-box;
+    vertical-align: middle;
+    text-align: center;
+    text-decoration: none;
+    outline: 0 !important;
+    outline-color: #fff;
+    text-decoration: #fff;
+}
+
+.wpdt-c h1.wdt-rating-heading {
+    margin-top: 0 !important;
+    padding: 0 0 6px 0 !important;
+    font-size: 16px !important;
+    line-height: 20px !important;
+    color: #061938 !important;
+}
+
+.wpdt-c .wdt-first-btn {
+    display: inline;
+    background-color: #008cff !important;
+    color: #fff !important;
+    padding: 8px 16px;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 20px;
+}
+.wpdt-c .wdt-first-btn i{
+    margin-right: 8px;
+}
+
+.wpdt-c a.wdt-other-btn,
+.wpdt-c a.wdt-other-btn:active,
+.wpdt-c a.wdt-other-btn:visited,
+.wpdt-c a.wdt-other-btn:hover {
+    color: #008cff;
+    border: none ;
+    font-size: 13px;
+    line-height: 20px;
+}
+.wpdt-c a.wdt-first-btn:focus,
+.wpdt-c a.wdt-first-btn:visited,
+.wpdt-c a.wdt-first-btn:active,
+.wpdt-c a.wdt-other-btn:focus,
+.wpdt-c a.wdt-other-btn:visited,
+.wpdt-c a.wdt-other-btn:active
+{
+    outline:0 !important;
+    border: none !important;
+    box-shadow: none !important;
+}
+.wpdt-c .wdt-float-left {
+    float: left;
+    line-height: normal;
+}
+.wpdt-c .wdt-rating-notice .wdt-rating-massage {
+    font-size: 13px;
+    line-height: 20px;
+    margin: 0 0 4px 0;
+    color: #304463;
+}
+.wpdt-c .wdt-icon-rating {
+    margin-right: 10px;
+}
+.wpdt-c .wdt-icon-hands,
+.wpdt-c .wdt-icon-smile {
+    width: 15px;
+    vertical-align: baseline;
+}
+
+.wpdt-c .wdt-dismiss {
+    cursor: pointer;
+}
+.wpdt-c .wdt-dismiss i {
+    position: absolute;
+    top: 10px;
+    right: 14px;
+    padding: 5px;
+    line-height: normal;
+}
+
+.wpdt-c .wdt-custom-number-input {
+    position: relative;
+}
+.wpdt-c .wdt-custom-number-input input {
+    text-align: center;
+}
+.wpdt-c .wdt-custom-number-input .wdt-btn-number:hover,
+.wpdt-c .wdt-custom-number-input .wdt-btn-number:hover:disabled,
+.wpdt-c .wdt-custom-number-input .wdt-btn-number:active,
+.wpdt-c .wdt-custom-number-input .wdt-btn-number:visited,
+.wpdt-c .wdt-custom-number-input .wdt-btn-number{
+    position: absolute;
+    height: 100%;
+    width: 40px;
+    border: 1px solid #D7D9E2;
+    color: #8796AF;
+    background: #F8F8FA;
+}
+
+.wpdt-c .wdt-custom-number-input .wdt-btn-number.wdt-button-minus{
+    left: 0;
+    top: 0;
+    height: 100%;
+    border: 1px solid #D7D9E2;
+    color: #8796AF;
+    background: #F8F8FA;
+    border-radius: 2px 0 0 2px;
+}
+.wpdt-c .wdt-custom-number-input .wdt-btn-number.wdt-button-plus{
+    right: 0;
+    top: 0;
+    height: 100%;
+    border: 1px solid #D7D9E2;
+    color: #8796AF;
+    background: #F8F8FA;
+    border-radius: 0 2px 2px 0;
+}
+#wpdt-views {
+    display: flex;
+    justify-content: flex-start;
+}
+#wpdt-views .nav-link {
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    color: #5A6C89;
+    background-color: #fff !important;
+}
+#wpdt-views .nav-item {
+    cursor: pointer;
+}
+#wpdt-views .nav-item:hover {
+    border-bottom: 1px solid #008CFF;
+    color: #008CFF;
+    background-color: #fff !important;
+}
+#wpdt-views .nav-item.active {
+    border-bottom: 1px solid #008CFF;
+}
+
+#wpdt-views .nav-item .nav-link:hover,
+#wpdt-views .nav-item.active .nav-link{
+    color: #008CFF;
+    background-color: #fff !important;
+}
+
+@media only screen and (max-width : 1025px) {
+    .wpdt-c .wdt-rating-button {
+        margin: 10px 0 0 10px;
+    }
+    .wpdt-c .wdt-float-left {
+        float: none;
+        text-align: center;
+    }
+    .wpdt-c .wdt-rating-buttons {
+        text-align: center;
+    }
+    .wpdt-c .wdt-conditional-formatting-rule .col-sm-1 label {
+        text-align: left !important;
+    }
+    .wpdt-c .wdt-rating-buttons {
+        position: initial;
+        display: inline-flex;
+        justify-content: center;
+        width: 100%;
+        margin-top: 10px;
+        margin-bottom: 0;
+    }
+
+}
+@media only screen and (max-width : 960px) {
+    #adminmenu .wp-submenu li a[href='admin.php?page=wpdatatables-getting-started'],
+    .wdt-datatables-admin-wrap .wdt-link-tutorials{
+        display: none !important;
+    }
+}
+@media only screen and (max-width : 480px) {
+    .wpdt-c .wdt-datatables-admin-wrap .column-settings-panel .wdt-column-calc-total-block,
+    .wpdt-c .wdt-datatables-admin-wrap .column-settings-panel .wdt-column-calc-avg-block,
+    .wpdt-c .wdt-datatables-admin-wrap .column-settings-panel .wdt-column-calc-min-block,
+    .wpdt-c .wdt-datatables-admin-wrap .column-settings-panel .wdt-column-calc-max-block {
+        padding-top: 15px;
+    }
+    .wpdt-c .wdt-conditional-formatting-rule .colorpicker-element {
+        margin-left: 0;
+    }
+    .wpdt-c #wdt-formula-editor-modal .modal-dialog, .wpdt-c #wdt-columns-list-modal .modal-dialog {
+        width: 100% !important;
+    }
+}
