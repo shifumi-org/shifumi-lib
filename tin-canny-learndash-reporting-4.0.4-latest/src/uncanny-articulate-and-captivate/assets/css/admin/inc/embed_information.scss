@@ -1,0 +1,32 @@
+.snc-embed_information {
+ 	display:none;
+	padding:0 30px 30px 30px;
+
+	#item_title {
+		width:100%;
+		font-size: 22px;
+	}
+
+	ul {
+		margin-left:20px;
+	}
+
+	.insert_type {
+		padding-bottom:20px;
+		margin-bottom:20px;
+		border-bottom:1px solid #EEEEEE;
+	}
+
+	.options {
+		h3.no-margin {margin-top:0;}
+	}
+
+	.text_with_radio {
+		font-size:13px;
+		margin:0 0 0 3px;
+	}
+
+	h3.with_select {float:left;}
+	select.with_select {margin: 13px;}
+}
+

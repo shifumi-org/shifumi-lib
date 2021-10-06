@@ -1,0 +1,139 @@
+/* 
+	Dark Rimmed 
+	[Part of Colorbox Themes Pack on CodeCanyon]
+	
+	Desc: Rounded outer and inner, dark outline
+*/
+
+/*
+    Colorbox Core Style:
+    The following CSS is consistent between example themes and should not be altered.
+*/
+#colorbox, #cboxOverlay, #cboxWrapper{position:absolute; top:0; left:0; z-index:9999; overflow:hidden;}
+#cboxOverlay{position:fixed; width:100%; height:100%;}
+#cboxMiddleLeft, #cboxBottomLeft{clear:left;}
+#cboxContent{position:relative;}
+#cboxLoadedContent{overflow:auto; -webkit-overflow-scrolling: touch;}
+#cboxTitle{margin:0;}
+#cboxLoadingOverlay, #cboxLoadingGraphic{position:absolute; top:0; left:0; width:100%; height:100%;}
+#cboxPrevious, #cboxNext, #cboxClose, #cboxSlideshow{cursor:pointer;}
+.cboxPhoto{float:left; margin:auto; border:0; display:block; max-width:none; -ms-interpolation-mode:bicubic;}
+.cboxIframe{width:100%; height:100%; display:block; border:0;}
+#colorbox, #cboxContent, #cboxLoadedContent{box-sizing:content-box; -moz-box-sizing:content-box; -webkit-box-sizing:content-box;}
+
+/* 
+    User Style:
+    Change the following styles to modify the appearance of Colorbox.  They are
+    ordered & tabbed in a way that represents the nesting of the generated HTML.
+*/
+#cboxOverlay{ background:#202020; } 
+#cboxWrapper { overflow:visible; }
+#cboxTopLeft, #cboxTopCenter, #cboxTopRight, #cboxBottomLeft, #cboxBottomCenter, #cboxBottomRight, #cboxMiddleLeft, #cboxMiddleRight {
+	background:#090909;
+}
+#colorbox {
+	outline:0;
+	background:#090909;
+	overflow:visible;
+}
+    #cboxTopLeft{width:12px; height:12px; -webkit-border-radius: 12px 0 0 0; border-radius: 12px 0 0 0; }
+    #cboxTopCenter{height:12px; }
+    #cboxTopRight{width:12px; height:12px; -webkit-border-radius: 0 12px 0 0; border-radius: 0 12px 0 0; }
+    #cboxBottomLeft{width:12px; height:12px;  -webkit-border-radius: 0 0 0 12px; border-radius: 0 0 0 12px; }
+    #cboxBottomCenter{height:12px; }
+    #cboxBottomRight{width:12px; height:12px; -webkit-border-radius: 0 0 12px 0; border-radius: 0 0 12px 0; }
+    #cboxMiddleLeft{width:12px; }
+    #cboxMiddleRight{width:12px; }
+	
+    #cboxContent{ 
+		background:#090909; 
+		-webkit-border-radius: 6px; 
+		border-radius: 6px; 
+		overflow:visible;
+	}
+        .cboxIframe {background:#fff;}
+		.cboxPhoto { margin-bottom:0px;}
+		.cboxPhoto.withLongCaption { margin-bottom:0px; }
+        #cboxError{padding:50px; border:1px solid #ccc;}
+        #cboxLoadedContent{
+			margin-bottom:0px; font-style: italic; 	
+			background:#090909; 
+			-webkit-border-radius: 9px; 
+			border-radius: 9px; 
+		}
+        #cboxTitle{ 
+			position:absolute; left:0; bottom:0; clear:both; text-align:center; width:100%; overflow:hidden;
+			min-height:16px;  
+			background:#333333;
+			background:rgba(0,0,0,0.7);
+			padding:10px 0;
+			color:#fefefe; 
+		}
+        #cboxCurrent{position:absolute; bottom:0px; left:100px; color:#999;  text-transform:capitalize; display:inline-block; padding-left:1.5em; }
+        #cboxLoadingOverlay{background:#fff url(images/loading.gif) no-repeat 50% 50%;}
+
+        /* these elements are buttons, and may need to have additional styles reset to avoid unwanted base styles */
+        #cboxPrevious, #cboxNext, #cboxSlideshow, #cboxClose {border:0; padding:0; margin:0; overflow:visible; width:auto; background:none; text-transform:capitalize; }
+        
+        /* avoid outlines on :active (mouseclick), but preserve outlines on :focus (tabbed navigating) */
+        #cboxPrevious:active, #cboxNext:active, #cboxSlideshow:active, #cboxClose:active {outline:none;}
+		button:focus{ outline:1px dotted #000; }
+		
+		/* Image Button Styles */
+		#cboxPrevious, #cboxNext, #cboxClose {
+			display:block; background:url(images/colorbox_darkrimmed.png) 0 0 no-repeat;
+			transition:opacity 0.35s ease; color:#e5e5e5;
+		}
+		#cboxPrevious, #cboxNext {
+			/* -9999px replacement */
+			text-indent: 100%;
+			white-space: nowrap;
+			overflow: hidden;
+		}
+		#cboxPrevious, #cboxNext { width:64px; height:64px; }
+		#cboxPrevious:hover, #cboxNext:hover, #cboxClose:hover { opacity:0.75; }
+        #cboxPrevious{position:absolute; bottom:46%; left:-68px; color:#444; background-position:0 -64px; }
+        #cboxNext{position:absolute; bottom:46%; right:-68px; color:#444; background-position:0 0; }
+        #cboxClose{
+			position:absolute; top:0; right:0; display:block; color:#444; background-image:none; 
+			color:#fefefe;
+			background-position:right -1px;
+			font-size:12px;
+			background-color:#090909; font-weight:bold; text-transform:uppercase; text-align:left;
+			width:auto; height:28px; padding:0 8px; line-height:28px;
+			 -webkit-border-radius: 0 0 0 6px; border-radius: 0 0 0 6px;
+		}
+
+		#cboxCurrent { left:0; bottom:-28px; font-size:10px; width:100%; margin:0; text-align:left; color:#555555; }
+		
+        #cboxSlideshow{position:absolute; top:32px; right:-6px; color:#444;}
+		#cboxSlideshow {
+			color: #f9f9f9;
+			font-size:10px; line-height:12px;
+			background-color: #000000;
+			padding: 4px 8px;
+		}
+		#cboxSlideshow:hover {
+			background-color: #111111; color:#ffffff;
+		}
+		
+		/* ----- start/stop slideshow icons. remove the next few lines to use text version instead */
+		#cboxSlideshow { 
+			width:32px; height:32px; top:auto; bottom:-48px; left:48%;  background:url(images/colorbox_darkrimmed.png) no-repeat -16px -148px; 
+			display:block; 
+			transition:opacity 0.35s ease;
+			/* -9999px replacement */
+			text-indent: 150%;
+			white-space: nowrap;
+			overflow: hidden;
+		}
+		#cboxSlideshow:hover { background-color:transparent; opacity:0.75; }
+		.cboxSlideshow_off  #cboxSlideshow { background-position:-16px -207px; }
+		.cboxSlideshow_on  #cboxSlideshow { background-position:-16px -148px; }
+		/* ------------- */
+
+		#colorbox {  border-radius: 18px; }
+/*
+ IE7 and IE8. This style is not applied to IE9.
+*/
+/*.cboxIE #colorbox {} */

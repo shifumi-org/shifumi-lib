@@ -1,0 +1,210 @@
+.uo-admin-reporting-tab-single#tin-can {
+	.tablenav {
+		height:inherit;
+
+		.ucTinCan {
+		  border-width: 2px;
+		  border-style: groove;
+		  border-color: threedface;
+		  margin-bottom:20px;
+
+		  div {
+			  padding:10px;
+			  margin:10px;
+			  width:21.5%;
+			  float:left;
+			  border-right: 1px dashed #666666;
+
+				&:last-child {
+					border-right:none;
+					padding-right:0;
+					margin-right:0;
+				}
+
+				&#tc_filter_date_range {
+					label {
+				    width: 65px;
+				    display: block;
+				    float: left;
+					}
+
+					input.datepicker {
+						margin-left:0;
+						width:100px;
+					}
+
+					select {
+						margin-left:0;
+					}
+
+					input[name="tc_filter_end"] {
+						margin-left:65px;
+					}
+
+					.dashicons {
+						margin-top: 5px;
+						cursor: pointer;
+					}
+
+					#do_tc_filter {
+						float:right;
+					}
+				}
+		  }
+
+		  h3 {
+			  margin-top:0;
+			  font-size:15px;
+		  }
+
+		  select, input {
+			  float: none;
+		  }
+
+		  &:after {
+			  content: ".";
+		   visibility: hidden;
+		   display: block;
+		   height: 0;
+		   clear: both;
+		  }
+
+			a.button {
+				margin-top: 0;
+				float: right;
+			}
+		}
+
+		&.bottom {
+			position:relative;
+
+			#tincan-filters-per_page {
+				float: left;
+				margin-bottom: 40px;
+			}
+
+			#tincan-filters-export {
+				right: 0;
+				margin-top: 45px;
+				position: absolute;
+			}
+		}
+	}
+
+	.sorting-indicator.double-headed-triangles {
+		visibility:visible;
+
+		&:before {
+			content:"\f229";
+
+			-ms-transform: rotate(90deg); /* IE 9 */
+			-webkit-transform: rotate(90deg); /* Chrome, Safari, Opera */
+			transform: rotate(90deg);
+    }
+	}
+}
+.uo-admin-reporting-tab-single#xapi-tincan {
+	.tablenav {
+		height:inherit;
+
+		.ucTinCan {
+			border-width: 2px;
+			border-style: groove;
+			border-color: threedface;
+			margin-bottom:20px;
+
+			div {
+				padding:10px;
+				margin:10px;
+				width:21.5%;
+				float:left;
+				border-right: 1px dashed #666666;
+
+				&:last-child {
+					border-right:none;
+					padding-right:0;
+					margin-right:0;
+				}
+
+				&#tc_filter_date_range {
+					label {
+						width: 65px;
+						display: block;
+						float: left;
+					}
+
+					input.datepicker {
+						margin-left:0;
+						width:100px;
+					}
+
+					select {
+						margin-left:0;
+					}
+
+					input[name="tc_filter_end"] {
+						margin-left:65px;
+					}
+
+					.dashicons {
+						margin-top: 5px;
+						cursor: pointer;
+					}
+
+					#do_tc_filter {
+						float:right;
+					}
+				}
+			}
+
+			h3 {
+				margin-top:0;
+				font-size:15px;
+			}
+
+			select, input {
+				float: none;
+			}
+
+			&:after {
+				content: ".";
+				visibility: hidden;
+				display: block;
+				height: 0;
+				clear: both;
+			}
+
+			a.button {
+				margin-top: 0;
+				float: right;
+			}
+		}
+
+		&.bottom {
+			position:relative;
+
+			#tincan-filters-per_page {
+				float: left;
+				margin-bottom: 40px;
+			}
+
+			#tincan-filters-export {
+				right: 0;
+				margin-top: 45px;
+				position: absolute;
+			}
+		}
+	}
+
+	.sorting-indicator.double-headed-triangles {
+		visibility:visible;
+
+		&:before {
+			content:"\f229";
+
+			-ms-transform: rotate(90deg); /* IE 9 */
+			-webkit-transform: rotate(90deg); /* Chrome, Safari, Opera */
+			transform: rotate(90deg);
+		}
+	}
+}
