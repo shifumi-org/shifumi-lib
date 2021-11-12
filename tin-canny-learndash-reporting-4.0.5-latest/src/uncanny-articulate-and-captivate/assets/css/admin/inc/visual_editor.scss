@@ -1,0 +1,45 @@
+.vc_row {
+	#sidemenu {
+		padding:10px 20px 0;
+		margin-bottom:-1px;
+		overflow:auto;
+		position: relative;
+		z-index:100;
+
+		li {
+			float:left;
+			margin:0 0 0 -1px;
+			border:1px solid #DDD;
+			border-top-left-radius: 3px;
+			border-top-right-radius: 3px;
+			padding:5px 14px;
+			background-color:#EEEEEE;
+
+			a { text-decoration:none; }
+
+			&.current {
+				background-color:#FFF;
+				border-bottom:1px solid #FFFFFF;;
+			}
+		}
+	}
+
+	#snc-content_library_wrap {display:none;}
+
+	.vc-snc-embed {
+		padding:0 15px;
+		margin-bottom:20px;
+	}
+
+	.wpb-select.fade,
+	.wpb-select .fade {opacity:1 !important;}
+
+	#vc-snc-choosen-file {
+		display:none;
+		margin-bottom:20px;
+
+		.change_file {margin-top:5px;}
+	}
+
+	.vc-snc-hidden {display:none;}
+}
