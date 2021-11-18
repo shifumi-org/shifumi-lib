@@ -1,0 +1,36 @@
+{
+    "name": "learndash-course-grid",
+    "description": "LearnDash LMS - Course Grid",
+    "version": "2.0.0",
+    "private": true,
+    "scripts": {
+        "blocks": "wp-scripts build includes/gutenberg/blocks/index.js --output-path=includes/gutenberg/assets/js/",
+        "blocks:watch": "wp-scripts start includes/gutenberg/blocks/index.js --output-path=includes/gutenberg/assets/js/"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://bitbucket.org/learndash/learndash-course-grid/"
+    },
+    "keywords": [
+        "learndash",
+        "course",
+        "grid"
+    ],
+    "author": "LearnDash",
+    "bugs": {
+        "url": "https://bitbucket.org/learndash/learndash-course-grid/issues"
+    },
+    "homepage": "https://bitbucket.org/learndash/learndash-course-grid#readme",
+    "devDependencies": {
+        "@wordpress/eslint-plugin": "^9.1.2",
+        "@wordpress/scripts": "^18.0.1",
+        "eslint": "^7.32.0",
+        "eslint-plugin-react": "^7.26.0"
+    },
+    "prettier": {
+        "tabWidth": 4,
+        "semi": false,
+        "singleQuote": true,
+        "bracketSpacing": true
+    }
+}

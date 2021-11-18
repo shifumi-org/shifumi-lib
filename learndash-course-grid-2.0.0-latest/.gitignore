@@ -1,0 +1,9 @@
+*.sublime-workspace
+*.sublime-project
+
+*.code-workspace
+
+*.TODO
+
+bootstrap/
+node_modules

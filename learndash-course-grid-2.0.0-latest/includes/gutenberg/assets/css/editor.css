@@ -1,0 +1,63 @@
+/* Settings */
+
+/* General */
+
+.learndash-course-grid-panel .components-base-control.show {
+    display: block;
+}
+
+.learndash-course-grid-panel .components-base-control.hide {
+    display: none;
+}
+
+.components-base-control .left {
+    float: left;
+    width: 48%;
+}
+
+.components-base-control .right {
+    float: right;
+    width: 48%;
+}
+
+.learndash-course-grid-panel select[multiple] + .components-input-control__suffix {
+    display: none;
+}
+
+/* Color Components */
+
+.learndash-course-grid-panel .color-picker .components-base-control__label {
+    display: inline-block;
+    margin-bottom: 12px;
+}
+
+.learndash-course-grid-panel .color-wrapper > .component-color-indicator {
+    margin: 4px 10px 0px 0px;
+    display: block;
+    float: left;
+}
+
+.learndash-course-grid-panel .color-wrapper > .components-circular-option-picker {
+    display: block;
+}
+
+.learndash-course-grid-panel .color-wrapper > .components-circular-option-picker > .components-circular-option-picker__custom-clear-wrapper {
+    display: block;
+}
+
+/* Course Grid Filter */
+
+.learndash-block-inner > .learndash-course-grid-filter {
+    position: relative;
+}
+
+.learndash-block-inner .learndash-course-grid-filter .filter {
+    margin-left: 0;
+    float: none;
+}
+
+.learndash-course-grid-panel .components-input-control__container select[multiple].components-select-control__input,
+.learndash-course-grid-filter-panel .components-input-control__container select[multiple].components-select-control__input {
+    min-height: 100px;
+    padding: 0;
+}
