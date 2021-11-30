@@ -14,9 +14,9 @@ class Utilities
         $template = locate_template( 'learndash/course-grid/' .  $template_file );
 
         $template_in_allowed_directory = (
-            0 === strpos( realpath( $template ), realpath( STYLESHEETPATH ) )
-            || 0 === strpos( realpath( $template ), realpath( TEMPLATEPATH ) )
-            || 0 === strpos( realpath( $template ), ABSPATH . WPINC . '/theme-compat/' )
+            ( is_string( realpath( $template ) ) && is_string( realpath( STYLESHEETPATH ) ) && 0 === strpos( realpath( $template ), realpath( STYLESHEETPATH ) ) )
+            || ( is_string( realpath( $template ) ) && is_string( realpath( TEMPLATEPATH ) ) && 0 === strpos( realpath( $template ), realpath( TEMPLATEPATH ) ) )
+            || ( is_string( realpath( $template ) ) && is_string( ABSPATH . WPINC . '/theme-compat/' ) && 0 === strpos( realpath( $template ), ABSPATH . WPINC . '/theme-compat/' ) )
         );
 
         if ( $template && $template_in_allowed_directory ) {
@@ -33,9 +33,9 @@ class Utilities
         $template = locate_template( 'learndash/course-grid/' .  $template_file );
 
         $template_in_allowed_directory = (
-            0 === strpos( realpath( $template ), realpath( STYLESHEETPATH ) )
-            || 0 === strpos( realpath( $template ), realpath( TEMPLATEPATH ) )
-            || 0 === strpos( realpath( $template ), ABSPATH . WPINC . '/theme-compat/' )
+            ( is_string( realpath( $template ) ) && is_string( realpath( STYLESHEETPATH ) ) && 0 === strpos( realpath( $template ), realpath( STYLESHEETPATH ) ) )
+            || ( is_string( realpath( $template ) ) && is_string( realpath( TEMPLATEPATH ) ) && 0 === strpos( realpath( $template ), realpath( TEMPLATEPATH ) ) )
+            || ( is_string( realpath( $template ) ) && is_string( ABSPATH . WPINC . '/theme-compat/' ) && 0 === strpos( realpath( $template ), ABSPATH . WPINC . '/theme-compat/' ) )
         );
 
         if ( $template && $template_in_allowed_directory ) {

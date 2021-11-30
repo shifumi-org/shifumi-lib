@@ -5,7 +5,7 @@ namespace LearnDash;
  * Plugin Name: LearnDash LMS - Course Grid
  * Plugin URI: https://www.learndash.com/
  * Description: Build LearnDash course grid easily.
- * Version: 2.0.2.2
+ * Version: 2.0.3
  * Author: LearnDash
  * Author URI: https://www.learndash.com/
  * Text Domain: learndash-course-grid
@@ -70,7 +70,7 @@ class Course_Grid {
 	public function define_constants()
 	{
 		if ( ! defined( 'LEARNDASH_COURSE_GRID_VERSION' ) ) {
-			define( 'LEARNDASH_COURSE_GRID_VERSION', '2.0.2.2' );
+			define( 'LEARNDASH_COURSE_GRID_VERSION', '2.0.3' );
 		}
 		
 		if ( ! defined( 'LEARNDASH_COURSE_GRID_FILE' ) ) {

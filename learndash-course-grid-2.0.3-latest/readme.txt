@@ -8,7 +8,7 @@ Tags: grid, view, display
 Requires at least: 5.0
 Tested up to: 5.8.2
 Requires PHP: 7.0
-Stable tag: 2.0.2
+Stable tag: 2.0.3
 
 Transform the course list created with shortcode [ld_course_list] to grid view.
 
@@ -39,6 +39,14 @@ Alternatively, you always have the option to update manually. Please note, a ful
 1. Activate the add-on plugin via the PLUGINS menu.
 
 == Changelog ==
+
+= 2.0.3 =
+
+* Updated masonry script
+* Updated grid skin selector
+* Fixed PHP deprecated notice
+* Fixed legacy v1 assets are not loaded when using ld course list block
+* Fixed compatibility error with Elementor for v1 course grid element
 
 = 2.0.2 =
 
