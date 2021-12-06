@@ -1,0 +1,145 @@
+@charset "utf-8";
+.membershipcard1.arm_membership_card_template_wrapper {
+	width: 620px;
+	background-color: #0073c6;
+	border: 1px solid #0073c6;
+	border-radius: 10px;
+	margin: 0 auto 20px auto;
+	padding-bottom: 10px;
+	max-width: 100%;
+	position: relative;
+	overflow: hidden;
+}
+
+.membershipcard1 .arm_card_title {
+	padding: 15px 0;
+	text-align: center;
+	font-size: 30px;
+	color: #fff;
+}
+
+.membershipcard1 .arm_card_title span {
+	word-break: break-word;
+}
+
+.membershipcard1 .arm_card_content {
+	overflow: hidden;
+	background-color: #fff;
+}
+
+.membershipcard1 .arm_card_left_logo {
+	width: 190px;
+	height: 224px;
+	background-color: #f6f6f6;
+	float: left;
+	margin-left: 1px;
+	text-align: center;
+	border-right: 1px solid #f6f6f6;
+}
+
+.membershipcard1 .arm_card_left_logo img {
+	width: 150px;
+	margin: 0 0 20px auto;
+}
+
+.membershipcard1 .arm_card_details {
+	float: left;
+	width: calc(100% - 192px);
+}
+
+.membershipcard1 .arm_card_details ul {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+
+.membershipcard1 .arm_card_details ul li {
+	padding: 9px 0 9px 25px;
+	border-bottom: 1px solid #ebebeb;
+	overflow: hidden;
+}
+
+.membershipcard1 .arm_card_label {
+	display: inline-block;
+	font-size: 16px;
+	color: #000000;
+	width: 47%;
+	word-break: break-all;
+	vertical-align: middle;
+	text-align: left;
+	word-break: break-word;
+	float: left;
+}
+
+.membershipcard1 .arm_card_value {
+	display: inline-block;
+	width: 47%;
+	padding-left: 10px;
+	word-break: break-word;
+	vertical-align: middle;
+	text-align: left;
+	float: left;
+}
+
+/* --------------- Preview Popup --------------- */
+.popup_wrapper.arm_mobile_wrapper .arm_card_left_logo {
+	width: 100% !important;
+	float: none !important;
+	height: 80px !important;
+}
+
+.popup_wrapper.arm_mobile_wrapper .arm_card_left_logo img {
+	width: 80px !important;
+	height: 80px ;
+	margin: auto !important;
+}
+
+.popup_wrapper.arm_mobile_wrapper .arm_card_details {
+	width: 100% !important;
+	float: none !important;
+	text-align: center !important;
+}
+
+.popup_wrapper.arm_mobile_wrapper .arm_card_details ul li {
+	padding: 12px 3px !important;
+}
+
+.popup_wrapper.arm_mobile_wrapper .arm_card_label {
+	text-align: right !important;
+	padding-right: 10px !important;
+}
+
+.popup_wrapper.arm_mobile_wrapper .arm_card_value {
+	text-align: left !important;
+	padding-left: 10px !important;
+}
+/* --------------- Preview Popup over ---------- */
+
+@media only screen and (max-width: 480px) {
+
+	.membershipcard1 .arm_card_left_logo {
+		width: 100%;
+		float: none;
+		height: 80px;
+	}
+
+	.membershipcard1 .arm_card_left_logo img {
+		width: 80px;
+		height: 80px;
+		margin: auto;
+	}
+
+	.membershipcard1 .arm_card_details {
+		width: 100%;
+		float: none;
+		text-align: center;
+	}	
+
+	.membershipcard1 .arm_card_label {
+		padding-right: 10px;
+	}
+
+	.membershipcard1 .arm_card_value {
+		padding-left: 10px;
+	}
+}
