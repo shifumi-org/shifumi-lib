@@ -1,1 +1,0 @@
-TC_COURSE_ID="http://test.com",TC_COURSE_NAME={"en-US":"E-Learning Course"},TC_COURSE_DESC={"en-US":"Course Description."},TC_RECORD_STORES=[];
