@@ -1,0 +1,146 @@
+/* 
+	Minimal - Circles
+	[Part of Colorbox Themes Pack on CodeCanyon]
+	
+	Desc: Super minimal white theme. The captions and image numbers are hidden, but can be re-enabled by uncommenting the CSS.
+	 Uses big round buttons for prev/next/close.
+*/
+
+/*
+    Colorbox Core Style:
+    The following CSS is consistent between example themes and should not be altered.
+*/
+#colorbox, #cboxOverlay, #cboxWrapper{position:absolute; top:0; left:0; z-index:9999; overflow:hidden;}
+#cboxOverlay{position:fixed; width:100%; height:100%;}
+#cboxMiddleLeft, #cboxBottomLeft{clear:left;}
+#cboxContent{position:relative;}
+#cboxLoadedContent{overflow:auto; -webkit-overflow-scrolling: touch;}
+#cboxTitle{margin:0;}
+#cboxLoadingOverlay, #cboxLoadingGraphic{position:absolute; top:0; left:0; width:100%; height:100%;}
+#cboxPrevious, #cboxNext, #cboxClose, #cboxSlideshow{cursor:pointer;}
+.cboxPhoto{float:left; margin:auto; border:0; display:block; max-width:none; -ms-interpolation-mode:bicubic;}
+.cboxIframe{width:100%; height:100%; display:block; border:0;}
+#colorbox, #cboxContent, #cboxLoadedContent{box-sizing:content-box; -moz-box-sizing:content-box; -webkit-box-sizing:content-box;}
+
+/* 
+    User Style:
+    Change the following styles to modify the appearance of Colorbox.  They are
+    ordered & tabbed in a way that represents the nesting of the generated HTML.
+*/
+#cboxOverlay{ 
+	background:#555555 url("images/pattern.jpg") repeat 0 0; 
+	/* vignette */
+-webkit-box-shadow: inset 0px 0px 256px 0px rgba(0, 0, 0, 0.75);
+        box-shadow: inset 0px 0px 256px 0px rgba(0, 0, 0, 0.75);
+} 
+#cboxWrapper { overflow:visible; }
+#cboxTopLeft, #cboxTopCenter, #cboxTopRight, #cboxBottomLeft, #cboxBottomCenter, #cboxBottomRight, #cboxMiddleLeft, #cboxMiddleRight {
+	background:#ffffff;
+}
+#colorbox {
+	outline:none;
+	background:transparent;
+	overflow:visible;
+}
+
+    #cboxTopLeft,#cboxTopRight,#cboxBottomLeft,#cboxBottomRight,#cboxMiddleLeft,#cboxMiddleRight{ 
+		background:transparent url("images/frame1.png") no-repeat 0 0;
+	}
+	#cboxMiddleLeft,#cboxMiddleRight { background-repeat:repeat-y; }
+	#cboxTopCenter, #cboxBottomCenter {
+		background:transparent url("images/frame2.png") repeat-x 0 0;
+	}
+	
+    #cboxTopLeft { width:32px; height:32px; background-position:0 0; }
+    #cboxTopCenter{height:32px; background-position:0 -32px; }
+    #cboxTopRight{width:32px; height:32px; background-position:-32px 0;  }
+    #cboxBottomLeft{width:32px; height:32px; background-position:0 -32px;  }
+    #cboxBottomCenter{height:32px; }
+    #cboxBottomRight{width:32px; height:32px; background-position:-32px -32px;  }
+    #cboxMiddleLeft{width:32px; background-position:-96px 0; }
+    #cboxMiddleRight{width:32px; background-position:-64px 0; }
+	
+    #cboxContent{ 
+		background:#ffffff; 
+		overflow:visible;
+	}
+        .cboxIframe {background:#fff;}
+		.cboxPhoto { margin-bottom:0px;}
+		.cboxPhoto.withLongCaption { margin-bottom:0px; }
+        #cboxError{padding:50px; border:1px solid #ccc;}
+        #cboxLoadedContent{
+			margin-bottom:0px; font-style: italic; 	
+			background:#ffffff; 
+		}
+        #cboxTitle { 
+			display:none !important;
+			/*
+			position:absolute; left:0; bottom:100%; margin-bottom:28px; clear:both; text-align:center; width:100%; overflow:hidden;
+			min-height:16px; 
+			background:transparent;
+			padding:8px 0; font-size:12px; line-height:16px;
+			color:#333; font-weight:bold;
+			text-shadow:1px 1px 12px #fff;
+			outline:0; 
+			*/
+		}
+        #cboxCurrent{
+			display:none !important;
+			/*position:absolute; bottom:0px; text-transform:capitalize; display:inline-block; padding-left:1.5em; 
+			bottom:-28px; font-size:10px; width:100%; margin:0; text-align:center; color:#555555;*/
+		}
+        #cboxLoadingOverlay{background:#fff url(images/loading.gif) no-repeat 50% 50%;}
+
+        /* these elements are buttons, and may need to have additional styles reset to avoid unwanted base styles */
+        #cboxPrevious, #cboxNext, #cboxSlideshow, #cboxClose {border:0; padding:0; margin:0; overflow:visible; width:auto; background:none; text-transform:capitalize; }
+        
+        /* avoid outlines on :active (mouseclick), but preserve outlines on :focus (tabbed navigating) */
+        #cboxPrevious:active, #cboxNext:active, #cboxSlideshow:active, #cboxClose:active {outline:0;}
+
+		/* Image Button Styles */
+		#cboxPrevious, #cboxNext, #cboxClose {
+			display:block; background:transparent url(images/frame1.png) 0 0 no-repeat;
+			transition:opacity 0.35s ease; color:#e5e5e5;
+		}
+		#cboxPrevious, #cboxNext, #cboxClose {
+			/* -9999px replacement */
+			text-indent: 100%;
+			white-space: nowrap;
+			overflow: hidden;
+		}
+		#cboxPrevious, #cboxNext, #cboxClose { width:64px; height:64px; }
+		#cboxPrevious, #cboxNext { opacity:0.5; }
+		#cboxClose { opacity:1.0; border-left:none; }
+		#cboxPrevious:hover, #cboxNext:hover, #cboxClose:hover { opacity:1.0; }
+		
+        #cboxPrevious{ position:absolute; bottom:46%; left:-85px; color:#444; background-position:-196px 0px; }
+        #cboxNext{ position:absolute; bottom:46%; right:-92px; color:#444; background-position:-128px 0px; }
+        #cboxClose{ 
+			width:22px; height:22px; position:absolute; top:36px; left:100%; margin-left:30px; color:#444; 
+			background-position:right 0px; 
+			transition:width 0.25s ease; 
+			background-color:#888687; 
+			border:1px solid #67676b; 
+			-webkit-box-shadow: inset 8px 0px 15px -6px rgba(0, 0, 0, 0.4);
+					box-shadow: inset 8px 0px 15px -6px rgba(0, 0, 0, 0.4);
+		}
+		#cboxClose:hover { width:26px; }
+		
+		#cboxSlideshow {
+			position:absolute; top:100%; margin-top:28px; left:50%; margin-left:-25px;
+			width:100px; height:25px;
+			color: #e7e8e5;
+			text-shadow:1px 1px 0 #6e6d6d;
+			font-size:10px; line-height:12px;
+			background-color: #ffffff;
+			padding: 6px 10px;
+			background-color:#888687; 
+			-webkit-box-shadow: inset 0px 8px 15px -6px rgba(0, 0, 0, 0.4);
+					box-shadow: inset 0px 8px 15px -6px rgba(0, 0, 0, 0.4);
+		}
+		#cboxSlideshow:hover { color:#ffffff; }
+
+/*
+ IE7 and IE8. This style is not applied to IE9.
+*/
+/*.cboxIE #colorbox {} */
