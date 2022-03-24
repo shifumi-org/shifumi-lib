@@ -1,0 +1,68 @@
+div.wpExcelTable {
+    clear:both;
+}
+.wpExcelTable .handsontableInputHolder {
+    background: white;
+}
+
+.wpExcelTable_search_filter {
+    float: left;
+    margin-bottom: 20px;
+}
+
+.wpExcelTable .wdtAttachmentEditorHolder {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    background-color: #fff;
+    padding: 5px;
+    border: 2px solid #CCC;
+}
+
+.wpExcelTable .wdtAttachmentEditorHolder span.delete_file {
+    padding-left: 10px;
+}
+
+.wpExcelTable .invalid_editor_value > textarea {
+    background-color: #ff4c42!important;
+}
+
+.wpExcelTable .overlayed_elm {
+    position: relative;
+    pointer-events: none;
+}
+
+.wpExcelTable .overlayed_elm>* {
+    opacity: .3;
+}
+
+.wpExcelTable > .handsontable:first-child .overlayed_elm:after {
+    color: inherit;
+    font-size: 34px;
+    left: 50%;
+    margin-left: -15px;
+    margin-top: -20px;
+    opacity: 1;
+    position: absolute;
+    top: 50%;
+    -webkit-animation: spin 2s infinite linear;
+    -moz-animation: spin 2s infinite linear;
+    -o-animation: spin 2s infinite linear;
+    animation: spin 2s infinite linear;
+}
+
+.wpExcelTable > .handsontable:first-child .overlayed_elm:after {
+    display: inline-block;
+    font-family: wpDataTablesIcons!important;
+    font-style: normal;
+    font-weight: 400;
+    text-align: center;
+    text-decoration: none;
+    vertical-align: middle;
+    -webkit-font-smoothing: antialiased;
+}
+
+.wpExcelTable > .handsontable:first-child .overlayed_elm:after {
+    content: "\e982"
+}
