@@ -1,0 +1,151 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+	.action-link {
+		color: theme('colors.base.dark');
+		@apply font-medium text-sm mr-10 underline
+	}
+
+	.action-button {
+		color: theme('colors.base.white');
+		background-color: theme('colors.gray.base');
+		@apply py-1.5 px-4 rounded text-sm
+	}
+
+	.action-button:disabled {
+		background-color: theme('colors.gray.mute');
+		color: theme('colors.gray.text');
+	}
+
+	.action-button:not(:disabled):hover {
+		background-color: theme('colors.gray.hover');
+	}
+
+	.action-button.blue {
+		background-color: theme('colors.blue.base');
+	}
+
+	.action-button.green, .action-button.green:hover {
+		background-color: theme('colors.green.base');
+	}
+
+	.action-button.purple, .action-button.purple:hover {
+		background-color: theme('colors.purple.base');
+	}
+
+	.action-button.white {
+		background-color: #fff;
+		color: theme('colors.base.normal');
+		border-color: theme('colors.base.light-gray');
+		@apply font-semibold border-solid border cursor-pointer
+	}
+
+	.action-button.small {
+		@apply py-1 px-3.5
+	}
+
+	.action-button.large {
+		@apply py-2 px-5
+	}
+
+	.action-button.radio {
+		color: theme('colors.gray.text');
+		@apply py-1.5 px-2.5 font-medium text-xs
+	}
+
+	.action-button.radio.large {
+		@apply py-2 px-4
+	}
+
+	.action-button.radio.extra-large {
+		@apply py-3 px-7 text-sm
+	}
+
+	.action-button.blue:hover {
+		background-color: theme('colors.blue.hover');
+	}
+
+	.validation-button {
+		min-width: 150px;
+	}
+
+	.step {
+		color: theme('colors.gray.base');
+		@apply flex items-center font-medium text-xs tracking-tight;
+	}
+
+	.step.active {
+		color: theme('colors.base.dark');
+	}
+
+	.step span {
+		background-color: theme('colors.gray.base');
+		color: #fff;
+		@apply rounded-full text-xxs font-bold mr-1 h-4 w-4 flex items-center justify-center
+	}
+
+	.step.active span {
+		background-color: theme('colors.blue.base');
+	}
+
+	.radio-button-group input[type="radio"] {
+		position: absolute;
+		clip: rect(0, 0, 0, 0);
+		pointer-events: none;
+	}
+
+	.radio-button-group:not(.payment) input[type="radio"]:checked + label, .radio-button-group:not(.payment) label:hover {
+		background-color: theme('colors.blue.light');
+		border-color: theme('colors.blue.base');
+		color: theme('colors.blue.base');
+	}
+
+	.checkbox-card {
+		@apply relative
+	}
+
+	.checkbox-card .icon-selected {
+		@apply absolute right-3 top-7 invisible
+	}
+
+	.checkbox-card.selected .icon-selected {
+		@apply visible
+	}
+
+	.checkbox-card input[type="checkbox"]:checked + label {
+		border-color: theme('colors.blue.base');
+		box-shadow: 0 0 32px rgba(0, 0, 0, 0.1);
+	}
+
+	.radio-button-group.payment input[type="radio"]:checked + label, .radio-button-group.payment label:hover {
+		box-shadow: 0 0 30px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+		border-color: theme('colors.blue.base');
+	}
+
+	.radio-button-group.payment button {
+		display: none;
+	}
+
+	.radio-button-group.payment input[type="radio"]:checked + label button {
+		display: inline-block;
+	}
+
+	input.toggle ~ .dot {
+		transform: translateX(-10%);
+	}
+
+	input.toggle:checked ~ .dot {
+		transform: translateX(90%);
+		background-color: theme('colors.blue.base');
+	}
+
+	input.toggle:checked + div {
+		background-color: theme('colors.blue.toggle');
+	}
+
+	.payment-card {
+		@apply rounded-lg
+	}
+}
