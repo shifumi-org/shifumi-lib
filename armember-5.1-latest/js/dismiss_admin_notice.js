@@ -1,0 +1,1 @@
+jQuery(window).on("load",function(){jQuery(document).on("click","div[data-dismissible] button.notice-dismiss",function(){event.preventDefault();var i,s,t,e,n=jQuery(this);i=n.closest("div[data-dismissible]").attr("data-dismissible").split("-"),t=i.pop(),s=i.join("-"),e={action:"dismiss_admin_notice",option_name:s,dismissible_length:t},jQuery.post(ajaxurl,e)})});
