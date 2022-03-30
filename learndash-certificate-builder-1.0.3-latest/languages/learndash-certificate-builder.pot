@@ -1,0 +1,255 @@
+# Copyright (C) 2021 LearnDash
+# This file is distributed under the same license as the LearnDash LMS - Certificate Builder plugin.
+msgid ""
+msgstr ""
+"Project-Id-Version: LearnDash LMS - Certificate Builder 1.0.2\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/learndash-certificate-builder\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2021-07-12T17:36:07+07:00\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"X-Generator: WP-CLI 2.4.0\n"
+"X-Domain: learndash-certificate-builder\n"
+
+#. Plugin Name of the plugin
+msgid "LearnDash LMS - Certificate Builder"
+msgstr ""
+
+#. Description of the plugin
+msgid "LearnDash certificate builder allows you build certificates for your courses using the Gutenberg WordPress block editor"
+msgstr ""
+
+#. Author of the plugin
+msgid "LearnDash"
+msgstr ""
+
+#. translators: Learndash website.
+#: src/class-bootstrap.php:58
+msgid "LearnDash LMS - Certificate Builder Add-on requires the following plugin(s) to be active: %s"
+msgstr ""
+
+#: src/component/class-pdf.php:194
+msgid "Black"
+msgstr ""
+
+#: src/component/class-pdf.php:199
+msgid "Cyan bluish gray"
+msgstr ""
+
+#: src/component/class-pdf.php:204
+msgid "White"
+msgstr ""
+
+#: src/component/class-pdf.php:209
+msgid "Pale pink"
+msgstr ""
+
+#: src/component/class-pdf.php:214
+msgid "Vivid red"
+msgstr ""
+
+#: src/component/class-pdf.php:219
+msgid "Luminous vivid orange"
+msgstr ""
+
+#: src/component/class-pdf.php:224
+msgid "Luminous vivid amber"
+msgstr ""
+
+#: src/component/class-pdf.php:229
+msgid "Light green cyan"
+msgstr ""
+
+#: src/component/class-pdf.php:234
+msgid "Vivid green cyan"
+msgstr ""
+
+#: src/component/class-pdf.php:239
+msgid "Pale cyan blue"
+msgstr ""
+
+#: src/component/class-pdf.php:244
+msgid "Vivid cyan blue"
+msgstr ""
+
+#: src/component/class-pdf.php:249
+msgid "Vivid purple"
+msgstr ""
+
+#: src/component/pdf/class-pdf-content.php:269
+msgid "A background image is required."
+msgstr ""
+
+#: src/controller/class-certificate-builder.php:107
+msgid "Builder"
+msgstr ""
+
+#: src/controller/class-certificate-builder.php:109
+msgid "Legacy"
+msgstr ""
+
+#. translators: Post type title.
+#: src/controller/class-certificate-builder.php:133
+msgid "Preview &#8220;%s&#8221;"
+msgstr ""
+
+#: src/controller/class-certificate-builder.php:264
+msgid "Certificate Post does not exist."
+msgstr ""
+
+#: src/controller/class-certificate-builder.php:269
+msgid "Awarded Post does not exist."
+msgstr ""
+
+#: src/controller/class-certificate-builder.php:274
+msgid "User does not exist."
+msgstr ""
+
+#: src/controller/class-fonts-manager.php:41
+#: blocks/certificate-builder/edit.js:204
+#: blocks/extend/index.js:223
+msgid "Fonts"
+msgstr ""
+
+#: src/controller/class-fonts-manager.php:102
+msgid "The Regular font is required"
+msgstr ""
+
+#: src/controller/class-fonts-manager.php:215
+#: src/controller/class-fonts-manager.php:264
+msgid "Label"
+msgstr ""
+
+#: src/controller/class-fonts-manager.php:223
+msgid "Regular (*)"
+msgstr ""
+
+#: src/controller/class-fonts-manager.php:231
+#: src/controller/class-fonts-manager.php:266
+#: blocks/extend/index.js:269
+msgid "Bold"
+msgstr ""
+
+#: src/controller/class-fonts-manager.php:239
+#: src/controller/class-fonts-manager.php:267
+#: blocks/extend/index.js:285
+msgid "Italic"
+msgstr ""
+
+#: src/controller/class-fonts-manager.php:247
+#: src/controller/class-fonts-manager.php:268
+msgid "Bold Italic"
+msgstr ""
+
+#: src/controller/class-fonts-manager.php:265
+msgid "Regular"
+msgstr ""
+
+#: src/controller/class-fonts-manager.php:280
+msgid "Remove"
+msgstr ""
+
+#: src/controller/class-switcher.php:101
+msgid "Use Certificate Builder"
+msgstr ""
+
+#: blocks/certificate-builder/edit.js:76
+msgid "Letter/USLetter (default)"
+msgstr ""
+
+#: blocks/certificate-builder/edit.js:77
+msgid "A4"
+msgstr ""
+
+#: blocks/certificate-builder/edit.js:80
+msgid "Landscape (default)"
+msgstr ""
+
+#: blocks/certificate-builder/edit.js:81
+msgid "Portrait"
+msgstr ""
+
+#: blocks/certificate-builder/edit.js:114
+#: blocks/extend/index.js:159
+msgid "Use custom font"
+msgstr ""
+
+#: blocks/certificate-builder/edit.js:144
+msgid "Spacing"
+msgstr ""
+
+#: blocks/certificate-builder/edit.js:145
+msgid "Container size (%)"
+msgstr ""
+
+#: blocks/certificate-builder/edit.js:155
+msgid "Margin bottom (rem)"
+msgstr ""
+
+#: blocks/certificate-builder/edit.js:168
+msgid "Options"
+msgstr ""
+
+#: blocks/certificate-builder/edit.js:169
+msgid "PDF Page Size"
+msgstr ""
+
+#: blocks/certificate-builder/edit.js:177
+msgid "PDF Page Orientation"
+msgstr ""
+
+#: blocks/certificate-builder/edit.js:186
+msgid "Fixed Viewport"
+msgstr ""
+
+#: blocks/certificate-builder/edit.js:195
+msgid "RTL"
+msgstr ""
+
+#: blocks/certificate-builder/edit.js:207
+#: blocks/extend/index.js:226
+msgid "Font family"
+msgstr ""
+
+#: blocks/certificate-builder/edit.js:230
+msgid "Certificate Background"
+msgstr ""
+
+#: blocks/certificate-builder/index.js:40
+msgid "LearnDash Certificate Builder"
+msgstr ""
+
+#: blocks/extend/index.js:179
+msgid "Font size (px)"
+msgstr ""
+
+#: blocks/extend/index.js:198
+msgid "Text color"
+msgstr ""
+
+#: blocks/extend/index.js:208
+msgid "Background color"
+msgstr ""
+
+#: blocks/extend/index.js:243
+msgid "Left"
+msgstr ""
+
+#: blocks/extend/index.js:251
+msgid "Center"
+msgstr ""
+
+#: blocks/extend/index.js:259
+msgid "Right"
+msgstr ""
+
+#: blocks/extend/index.js:303
+msgid "Uppercase"
+msgstr ""
+
+#: blocks/row/index.js:40
+msgid "LearnDash Certificate Builder Row"
+msgstr ""

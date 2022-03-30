@@ -1,0 +1,111 @@
+#certificate-builder-inner-blocks {
+  font-size: 18px;
+  line-height: 1.25;
+}
+#certificate-builder-inner-blocks h1 {
+  font-size: 3em;
+  font-weight: normal;
+  margin: 0;
+  padding: 0;
+}
+#certificate-builder-inner-blocks h2 {
+  font-size: 2.25em;
+  font-weight: normal;
+  margin: 0;
+  padding: 0;
+}
+#certificate-builder-inner-blocks h3 {
+  font-size: 1.5em;
+  font-weight: normal;
+  margin: 0;
+  padding: 0;
+}
+#certificate-builder-inner-blocks h4 {
+  font-size: 1.25em;
+  font-weight: normal;
+  margin: 0;
+  padding: 0;
+}
+#certificate-builder-inner-blocks h5 {
+  font-size: 1.125em;
+  font-weight: normal;
+  margin: 0;
+  padding: 0;
+}
+#certificate-builder-inner-blocks h6 {
+  font-size: 1em;
+  font-weight: normal;
+  margin: 0;
+  padding: 0;
+}
+#certificate-builder-inner-blocks p {
+  font-size: 1em;
+  margin: 0;
+  padding: 0;
+}
+#certificate-builder-inner-blocks .wp-block {
+  width: 100%;
+  max-width: 100%;
+  margin-top: 0;
+}
+#certificate-builder-inner-blocks h1.has-background,
+#certificate-builder-inner-blocks h2.has-background,
+#certificate-builder-inner-blocks h3.has-background,
+#certificate-builder-inner-blocks h4.has-background,
+#certificate-builder-inner-blocks h5.has-background,
+#certificate-builder-inner-blocks h6.has-background {
+  padding: 1.25em 2.375em;
+}
+#certificate-builder-inner-blocks p.has-background {
+  padding: 1.25em 2.375em;
+}
+#certificate-builder-inner-blocks .wp-block:last-child {
+  margin-bottom: 0;
+}
+#certificate-builder-inner-blocks .wp-block-separator {
+  margin: 1em 0 0 0;
+}
+#certificate-builder-inner-blocks .wp-block-separator:last-child {
+  margin: 0;
+}
+#certificate-builder-inner-blocks .wp-block-column {
+  margin-bottom: 0;
+}
+#certificate-builder-inner-blocks .block-library-spacer__resize-container {
+  margin-bottom: 0;
+}
+#certificate-builder-inner-blocks h1::before {
+  content: "";
+  margin: 0;
+  background: none;
+  display: none;
+  height: 0;
+  width: 0;
+}
+
+.is-root-container {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+
+.components-editor-notices__snackbar .is-tertiary {
+  display: none;
+}
+
+.edit-post-more-menu {
+  display: none;
+}
+
+/* https://github.com/WordPress/gutenberg/issues/11681 */
+div.editor-template-validation-notice.components-notice.is-warning {
+  display: none;
+}
+
+.wp-block[data-align=left] > .wp-block-image, .wp-block[data-align=right] > .wp-block-image {
+  margin-top: 0;
+}
+
+.wp-block[data-align=center] figure.wp-block-image {
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
