@@ -1,0 +1,19 @@
+#wp-h5p-xapi-spinner {
+	position: fixed;
+	top: 0;
+	right: 0;
+	color: #ffffff;
+	background: #000000;
+	margin: 10px;
+	padding: 5px;
+	border-radius: 10px;
+	z-index: 100000;
+	box-shadow: 0 0 2px 2px #404040;
+}
+
+.h5p-xapi-lrs-instructions {
+	background: #ffffff;
+	border: 1px solid #ddd;
+	padding: 10px;
+	display: none;
+}

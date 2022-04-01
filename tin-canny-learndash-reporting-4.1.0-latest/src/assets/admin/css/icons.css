@@ -1,0 +1,176 @@
+@font-face {
+  font-family: 'Tin Canny Icons';
+  src:
+    url( '../fonts/uncannyowl-tincanny.ttf') format('truetype'),
+    url( '../fonts/uncannyowl-tincanny.woff') format('woff'),
+    url( '../fonts/uncannyowl-tincanny.svg') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.tincanny-icon {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'Tin Canny Icons' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.tincanny-icon-user:before {
+  content: '\e900';
+}
+
+.tincanny-icon-check:before {
+  content: '\e90f';
+}
+
+.tincanny-icon-times:before {
+  content: '\e910';
+}
+
+.tincanny-icon-book:before {
+  content: '\e901';
+}
+
+.tincanny-icon-check-circle:before {
+  content: '\e914';
+}
+
+.tincanny-icon-exclamation-circle:before {
+  content: '\e915';
+}
+
+.tincanny-icon-chart-bar:before {
+  content: '\e902';
+}
+
+.tincanny-icon-angle-left:before {
+  content: '\e91a';
+}
+
+.tincanny-icon-angle-right:before {
+  content: '\e91b';
+}
+
+.tincanny-icon-angle-up:before {
+  content: '\e919';
+}
+
+.tincanny-icon-angle-down:before {
+  content: '\e913';
+}
+
+.tincanny-icon-spinner-third:before {
+  content: '\e916';
+}
+
+.tincanny-icon-user-regular:before {
+  content: '\e903';
+}
+
+.tincanny-icon-check-regular:before {
+  content: '\e904';
+}
+
+.tincanny-icon-times-regular:before {
+  content: '\e905';
+}
+
+.tincanny-icon-book-regular:before {
+  content: '\e906';
+}
+
+.tincanny-icon-check-circle-regular:before {
+  content: '\e907';
+}
+
+.tincanny-icon-exclamation-circle-regular:before {
+  content: '\e908';
+}
+
+.tincanny-icon-chart-bar-regular:before {
+  content: '\e909';
+}
+
+.tincanny-icon-angle-left-regular:before {
+  content: '\e91c';
+}
+
+.tincanny-icon-angle-right-regular:before {
+  content: '\e91d';
+}
+
+.tincanny-icon-angle-up-regular:before {
+  content: '\e91e';
+}
+
+.tincanny-icon-angle-down-regular:before {
+  content: '\e91f';
+}
+
+.tincanny-icon-spinner-third-regular:before {
+  content: '\e917';
+}
+
+.tincanny-icon-user-bold:before {
+  content: '\e90a';
+}
+
+.tincanny-icon-check-bold:before {
+  content: '\e90b';
+}
+
+.tincanny-icon-times-bold:before {
+  content: '\e90c';
+}
+
+.tincanny-icon-book-bold:before {
+  content: '\e90d';
+}
+
+.tincanny-icon-check-circle-bold:before {
+  content: '\e90e';
+}
+
+.tincanny-icon-exclamation-circle-bold:before {
+  content: '\e911';
+}
+
+.tincanny-icon-chart-bar-bold:before {
+  content: '\e912';
+}
+
+.tincanny-icon-angle-left-bold:before {
+  content: '\e920';
+}
+
+.tincanny-icon-angle-right-bold:before {
+  content: '\e921';
+}
+
+.tincanny-icon-angle-up-bold:before {
+  content: '\e922';
+}
+
+.tincanny-icon-angle-down-bold:before {
+  content: '\e923';
+}
+
+.tincanny-icon-spinner-third-bold:before {
+  content: '\e918';
+}
+
+.tincanny-icon-twitter:before {
+  content: '\f099';
+}
+.tincanny-icon-facebook:before {
+  content: '\f09a';
+}
+.tincanny-icon-linkedin:before {
+  content: '\f0e1';
+}
