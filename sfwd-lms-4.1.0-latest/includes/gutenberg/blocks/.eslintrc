@@ -1,0 +1,8 @@
+{
+    "parserOptions": {
+        "ecmaVersion": 2016
+    },
+    "env": {
+        "es7": true
+    }
+}
