@@ -1,0 +1,7 @@
+.learndash-course-grid .arrow {
+    all: unset;
+}
+
+.learndash-course-grid .arrow::after {
+    all: unset;
+}
