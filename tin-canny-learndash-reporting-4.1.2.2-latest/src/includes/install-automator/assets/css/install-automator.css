@@ -1,0 +1,288 @@
+.uo-install-automator {
+    line-height: 1.5em;
+    color: #000000;
+}
+
+.uo-install-automator h1 {
+    font-family: 'Nunito', sans-serif;
+}
+
+.uo-install-automator strong {
+    color: #000000;
+}
+
+.uo-install-automator__header {
+    padding: 24px;
+    background-color: #FCFDFE;
+    border-bottom: 2px solid #F2F2F2;
+    border-radius: 4px 4px 0 0;
+}
+
+.uo-install-automator__header strong {
+    color: #3878BB;
+}
+
+.uo-install-automator p {
+    font-size: 18px;
+    font-weight: 400;
+    font-family: -apple-system, system-ui, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+    line-height: 1.7;
+}
+
+.uo-install-automator__box {
+    display: grid;
+    grid-template-columns: 1fr 6fr 3fr;
+    gap: 10px;
+    max-width: 900px;
+    border: 2px solid #F2F2F2;
+    border-radius: 8px;
+    padding: 16px;
+}
+
+.uo-install-automator__logo {
+    grid-column-start: 1;
+    grid-column-end: 1;
+}
+
+.uo-install-automator__logo img {
+    max-width: 71px;
+}
+
+.uo-install-automator__text {
+    grid-column-start: 2;
+    grid-column-end: 6;
+}
+
+.uo-install-automator__text h3 {
+    margin: 0 0 2px;
+}
+
+.uo-install-automator__rating {
+    display: block;
+    font-weight: bold;
+    margin-top: 6px;
+    font-size: 13px;
+}
+
+.uo-install-automator__rating img {
+    max-height: 15px;
+    max-width: 15px;
+}
+
+.uo-install-automator__button {
+    grid-column-start: 7;
+    grid-column-end: 11;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.uo-install-automator__button .auto-plugin-install {
+    height: 36px;
+}
+
+.uo-install-automator__button .auto-plugin-install-loader {
+    position: absolute;
+    left: -34px;
+    top: 4px;
+    border-color: #F2F2F2;
+    border-top-color: #0790E8;
+}
+
+.uo-install-automator__button button {
+    position: relative;
+    display: block;
+    padding: 10px 12px;
+    border-radius: 8px;
+    border: none;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 1;
+    cursor: pointer;
+    text-decoration: none !important;
+    background: #0790E8;
+    box-shadow: 0px 2px 4px 0px rgb(0 0 0 / 10%);
+}
+
+.uo-install-automator__button .auto-plugin-install-message {
+    font-size: 12px;
+    line-height: 12px;
+}
+
+
+.uo-install-automator__body {
+    padding: 24px;
+    background-color: #FCFDFE;
+    border-radius: 0 0 4px 4px;
+}
+
+.uo-install-automator__body h2 {
+    font-size: 20px;
+}
+
+.uo-install-automator__examples {
+    display: flex;
+    width: 100%;
+    font-size: 16px;
+    line-height: 1.6em;
+}
+
+.uo-install-automator__examples strong {
+    color: #3878BB;
+}
+
+.uo-install-automator__examples>li {
+    margin: 10px;
+    width: 100%;
+    border-radius: 10px;
+    background: #fff;
+    padding: 20px;
+    box-shadow: 0px 4px 8px 0px rgb(0 0 0 / 10%);
+    margin-bottom: 30px;
+}
+
+.uo-install-automator__examples>li:first-child {
+    margin-left: 0;
+}
+
+.uo-install-automator__examples>li:last-child {
+    margin-right: 0;
+}
+
+.uo-install-automator__requirements {
+    font-size: 18px;
+    margin-top: 18px;
+}
+
+.uo-install-automator__requirements label {
+    font-size: 16px;
+    color: #737373;
+}
+
+.uo-install-automator__requirements li {
+    font-size: 16px;
+    margin-top: 12px;
+}
+
+.uo-install-automator__icon {
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    border: 2px solid #E3E3E3;
+    text-align: center;
+    line-height: 20px;
+}
+
+.uo-install-automator__icon img {
+    max-height: 15px;
+    max-width: 15px;
+    vertical-align: middle;
+}
+
+.uo-install-automator__recipes {
+    background-color: #F4F4FE;
+    border-radius: 12px;
+    display: grid;
+    grid-template-columns: repeat(11, 1fr);
+    grid-template-rows: 1fr 7fr;
+    padding: 24px;
+    gap: 12px 24px;
+    line-height: 2.2em;
+}
+
+.uo-install-automator__recipes .header {
+    font-size: 18px;
+    grid-column: 1 / span 11;
+    justify-self: stretch;
+}
+
+.uo-install-automator__recipes .triggers {
+    grid-column: 1 / 6;
+    grid-row: 2 / last-line;
+}
+
+.uo-install-automator__recipes .actions {
+    grid-column: 6 / 11;
+    grid-row: 2 / last-line;
+}
+
+.uo-install-automator__recipes .robot {
+    grid-column: 11 / 11;
+    grid-row: 2 / last-line;
+    align-self: end;
+    min-width: 80px;
+    justify-content: center;
+}
+
+.external-link img {
+    width: 12px;
+}
+
+
+/**
+ * Recipe Simulator
+ */
+
+.uo-recipe-simulator {
+    width: 100%;
+}
+
+.uo-recipe-simulator__title {
+    font-size: 17px;
+    font-weight: 600;
+    color: #3b3b3b;
+}
+
+.uo-recipe-simulator__box {
+    margin-top: 20px;
+    width: 100%;
+    height: 100%;
+    box-shadow: 0px 4px 16px 0px rgb(0 0 0 / 10%);
+    background: #fff;
+    padding: 20px 0;
+    border-radius: 10px;
+}
+
+.uo-recipe-simulator__box ul {
+    padding: 5px 35px;
+    margin: 0;
+    overflow: hidden;
+    transition: height 600ms ease;
+}
+
+.uo-recipe-simulator__box li {
+    list-style: none;
+    margin: 0;
+    padding: 6px 0;
+    color: #595959;
+    line-height: 1.4;
+    position: relative;
+    display: block;
+}
+
+.uo-recipe-simulator__box li:before {
+    content: '';
+
+    width: calc(100% + 30px);
+    height: calc(100% + -4px);
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    opacity: 0;
+
+    border: 1px solid #0790e8;
+    border-radius: 200px;
+    box-shadow: 0 0 0 4px rgba(7, 144, 232, .2);
+
+    transition: opacity 300ms ease-in-out;
+}
+
+.uo-recipe-simulator__box li.uo-recipe-simulator__item--selected:before {
+    opacity: 1;
+}

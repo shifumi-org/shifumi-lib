@@ -1,0 +1,144 @@
+/* 
+	SKETCHTOON 
+	[Part of Colorbox Themes Pack on CodeCanyon]
+	
+	Desc: A paper-ish background with big colorbox buttons
+*/
+
+/*
+    Colorbox Core Style:
+    The following CSS is consistent between example themes and should not be altered.
+*/
+#colorbox, #cboxOverlay, #cboxWrapper{position:absolute; top:0; left:0; z-index:9999; overflow:hidden;}
+#cboxOverlay{position:fixed; width:100%; height:100%;}
+#cboxMiddleLeft, #cboxBottomLeft{clear:left;}
+#cboxContent{position:relative;}
+#cboxLoadedContent{overflow:auto; -webkit-overflow-scrolling: touch;}
+#cboxTitle{margin:0;}
+#cboxLoadingOverlay, #cboxLoadingGraphic{position:absolute; top:0; left:0; width:100%; height:100%;}
+#cboxPrevious, #cboxNext, #cboxClose, #cboxSlideshow{cursor:pointer;}
+.cboxPhoto{float:left; margin:auto; border:0; display:block; max-width:none; -ms-interpolation-mode:bicubic;}
+.cboxIframe{width:100%; height:100%; display:block; border:0;}
+#colorbox, #cboxContent, #cboxLoadedContent{box-sizing:content-box; -moz-box-sizing:content-box; -webkit-box-sizing:content-box;}
+
+/* 
+    User Style:
+    Change the following styles to modify the appearance of Colorbox.  They are
+    ordered & tabbed in a way that represents the nesting of the generated HTML.
+*/
+
+#cboxOverlay{ background:#ece8df url("images/paper.jpg") repeat 0 0; } 
+#cboxWrapper { overflow:visible; }
+#cboxTopLeft, #cboxTopCenter, #cboxTopRight, #cboxBottomLeft, #cboxBottomCenter, #cboxBottomRight, #cboxMiddleLeft, #cboxMiddleRight {
+	background:#ffffff;
+}
+#colorbox {
+	overflow:visible;
+	outline: 1px solid #D5D5D5;
+}
+    #cboxTopLeft{width:10px; height:10px;  }
+    #cboxTopCenter{height:10px; }
+    #cboxTopRight{width:10px; height:10px; }
+    #cboxBottomLeft{width:10px; height:10px; }
+    #cboxBottomCenter{height:10px; }
+    #cboxBottomRight{width:10px; height:10px; }
+    #cboxMiddleLeft{width:10px; }
+    #cboxMiddleRight{width:10px; }
+	
+    #cboxContent{background:#fff; overflow:visible;}
+        .cboxIframe {background:#fff;}
+		.cboxPhoto {margin-bottom:0px;}
+        #cboxError{padding:50px; border:1px solid #ccc;}
+        #cboxLoadedContent{margin-bottom:0; font-style: italic; }
+        #cboxTitle{ 
+			position:absolute; left:0; bottom:0; clear:both; text-align:center; width:98%; overflow:hidden;
+			min-height:16px;  
+			background:#e5e5e5;
+			background:rgba(255,255,255,0.75);
+			padding:10px 1%;
+			color:#444444; 
+			font-size:13px; line-height:16px;
+			font-style:italic;
+		}
+
+		#cboxTitle.tooltipload { display:none !important; } /* in case the JS isn't used, will default to non-tooltip above */
+		/* tooltip. classes added with jquery */
+		#cboxTitle.tooltiphover  {
+			display:block !important;
+			background: #1f93a2;
+			color:#ffffff;
+			border: 1px solid #ccc;
+			padding: 10px;
+			border-radius: 8px;
+			box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+			position: absolute;
+			left:16px; bottom:-7px;
+			width: 40%; 
+			overflow:visible;
+		}
+		/* tooltip arrows */
+		#cboxTitle.tooltiphover:before {
+			position: absolute;
+			display: inline-block;
+			border-left: 7px solid transparent;
+			border-top: 7px solid #1f93a2;
+			border-right: 7px solid transparent;
+			border-bottom-color: rgba(0, 0, 0, 0.2);
+			left: 10px;
+			bottom: -7px;
+			content: '';
+		}
+
+		#cboxTitle.tooltiphover:after {
+			position: absolute;
+			display: inline-block;
+			border-right: 6px solid transparent;
+			border-top: 6px solid #1f93a2;
+			border-left: 6px solid transparent;
+			left: 10px;
+			bottom: -7px;
+			content: '';
+		}
+		
+		
+		#cboxCurrent{position:absolute; bottom:0px; left:100px; color:#999;  text-transform:capitalize; display:inline-block; padding-left:1.5em; }
+        #cboxLoadingOverlay{background:#fff url(images/loading.gif) no-repeat 50% 50%;}
+
+        /* these elements are buttons, and may need to have additional styles reset to avoid unwanted base styles */
+        #cboxPrevious, #cboxNext, #cboxSlideshow, #cboxClose {border:0; padding:0; margin:0; overflow:visible; width:auto; background:none; text-transform:capitalize; }
+        
+        /* avoid outlines on :active (mouseclick), but preserve outlines on :focus (tabbed navigating) */
+        #cboxPrevious:active, #cboxNext:active, #cboxSlideshow:active, #cboxClose:active {outline:0;}
+
+		/* Image Button Styles */
+		#cboxPrevious, #cboxNext, #cboxClose, #cboxInfo, #cboxSlideshow {
+			width:64px; height:64px; display:block; background:url(images/colorbox_sketchtoon.png) no-repeat 0 0;
+			transition:opacity 0.35s ease;
+			/* -9999px replacement */
+			text-indent: 100%;
+			white-space: nowrap;
+			overflow: hidden;
+		}
+		#cboxPrevious:hover, #cboxNext:hover, #cboxClose:hover, #cboxInfo:hover, #cboxSlideshow:hover { 
+			opacity:0.75; 
+		}
+        #cboxPrevious{position:absolute; bottom:-68px; right:51%; color:#444; background-position:0 -64px; }
+        #cboxNext{position:absolute; bottom:-68px; left:51%; color:#444; background-position:0 0; }
+        #cboxClose{position:absolute; bottom:-72px; right:0; display:block; color:#444; background-position:0 -256px; }
+		/* info icon */
+		#cboxInfo { position:absolute; background-position:0 -320px; left:0; bottom:-68px; } 
+		
+		#cboxCurrent { display:none !important; /*left:0; top:-4%; font-size:10px; width:100%; margin:0; text-align:left;*/ }
+		
+		/* pause/play slideshow */
+		
+		.cboxSlideshow_on #cboxPrevious, .cboxSlideshow_off  #cboxPrevious { right:55%;}
+		.cboxSlideshow_on #cboxNext, .cboxSlideshow_off  #cboxNext { left:55%;}
+		#cboxSlideshow { position:relative; left:50%; margin-left:-32px; background-position:0 -124px; }
+		.cboxSlideshow_on #cboxSlideshow  { background-position:0 -124px; }
+		.cboxSlideshow_off #cboxSlideshow  {background-position:0 -187px; }
+
+/*
+ IE7 and IE8. This style is not applied to IE9.
+*/
+/*.cboxIE #colorbox {} */

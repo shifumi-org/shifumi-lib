@@ -1,0 +1,99 @@
+/* 
+	NOIMAGE - Rounded
+	[Part of Colorbox Themes Pack on CodeCanyon]
+	
+	Desc: Based on colorbox's default example4, replacing image usage with CSS3 rounded corners and box-shadow. 
+		  Round version.
+*/
+
+/*
+    Colorbox Core Style:
+    The following CSS is consistent between example themes and should not be altered.
+*/
+#colorbox, #cboxOverlay, #cboxWrapper{position:absolute; top:0; left:0; z-index:9999; overflow:hidden;}
+#cboxOverlay{position:fixed; width:100%; height:100%;}
+#cboxMiddleLeft, #cboxBottomLeft{clear:left;}
+#cboxContent{position:relative;}
+#cboxLoadedContent{overflow:auto; -webkit-overflow-scrolling: touch;}
+#cboxTitle{margin:0;}
+#cboxLoadingOverlay, #cboxLoadingGraphic{position:absolute; top:0; left:0; width:100%; height:100%;}
+#cboxPrevious, #cboxNext, #cboxClose, #cboxSlideshow{cursor:pointer;}
+.cboxPhoto{float:left; margin:auto; border:0; display:block; max-width:none; -ms-interpolation-mode:bicubic;}
+.cboxIframe{width:100%; height:100%; display:block; border:0;}
+#colorbox, #cboxContent, #cboxLoadedContent{box-sizing:content-box; -moz-box-sizing:content-box; -webkit-box-sizing:content-box;}
+
+/* 
+    User Style:
+    Change the following styles to modify the appearance of Colorbox.  They are
+    ordered & tabbed in a way that represents the nesting of the generated HTML.
+*/
+
+#cboxOverlay{ 
+	background:#fff; 
+}
+#cboxTopLeft, #cboxTopCenter, #cboxTopRight, #cboxBottomLeft, #cboxBottomCenter, #cboxBottomRight, #cboxMiddleLeft, #cboxMiddleRight {
+	background:#ffffff;
+}
+#colorbox {
+	outline: 1px solid #D5D5D5;
+	-webkit-box-shadow: 0px 0px 25px rgba(50, 50, 50, 0.5);
+	-moz-box-shadow:    0px 0px 25px rgba(50, 50, 50, 0.5);
+	box-shadow:         0px 0px 25px rgba(50, 50, 50, 0.5);
+-webkit-border-radius: 8px;
+    border-radius: 8px;
+}
+    #cboxTopLeft{width:15px; height:15px; }
+    #cboxTopCenter{height:15px;  }
+    #cboxTopRight{width:15px; height:15px; }
+    #cboxBottomLeft{width:15px; height:15px; }
+    #cboxBottomCenter{height:15px; }
+    #cboxBottomRight{width:15px; height:15px; }
+    #cboxMiddleLeft{width:15px; }
+    #cboxMiddleRight{width:15px; }
+	
+    #cboxContent{background:#fff; overflow:visible;}
+        .cboxIframe {background:#fff;}
+		.cboxPhoto {margin-bottom:28px; margin-top:0 !important;}
+		.cboxPhoto.withLongCaption { margin-bottom:12px; }
+		span.better-caption { line-height:16px; text-align:left; margin-bottom:6px; display:block; }
+        #cboxError{padding:50px; border:1px solid #ccc;}
+        #cboxLoadedContent{margin-bottom:24px; font-style: italic; }
+        #cboxTitle{ position:absolute; bottom:26px; clear:both; text-align:left; width:100%; color:#999; min-height:16px; overflow:hidden; }
+        #cboxCurrent{position:absolute; bottom:0px; left:100px; color:#999;  text-transform:capitalize; display:inline-block; padding-left:1.5em; }
+        #cboxLoadingOverlay{background:#fff url(images/loading.gif) no-repeat 50% 50%;}
+
+        /* these elements are buttons, and may need to have additional styles reset to avoid unwanted base styles */
+        #cboxPrevious, #cboxNext, #cboxSlideshow, #cboxClose {border:0; padding:0; margin:0; overflow:visible; width:auto; background:none; text-transform:capitalize; }
+        
+        /* avoid outlines on :active (mouseclick), but preserve outlines on :focus (tabbed navigating) */
+        #cboxPrevious:active, #cboxNext:active, #cboxSlideshow:active, #cboxClose:active {outline:0;}
+		button:focus{ outline:1px dotted #ffffff; }
+		
+        #cboxSlideshow{position:absolute; bottom:0px; right:52px; color:#444;}
+        #cboxPrevious{position:absolute; bottom:0px; left:0; color:#444;}
+        #cboxNext{position:absolute; bottom:0px; left:63px; color:#444;}
+        #cboxClose{position:absolute; bottom:0; right:0; display:block; color:#444;}
+
+		/* Button Styles */
+		#cboxPrevious,
+		#cboxNext,
+		#cboxSlideshow,
+		#cboxClose {
+			color: #777777;
+			font-size:10px; line-height:12px;
+			background-color: #dddddd;
+			border-right: 1px solid #ccc;
+			border-bottom: 1px solid #ccc;
+			padding: 4px 8px;
+		}
+		#cboxPrevious:hover,
+		#cboxNext:hover,
+		#cboxSlideshow:hover,
+		#cboxClose:hover {
+			background-color: #cccccc; color:#444444;
+		}
+		
+/*
+ IE7 and IE8. This style is not applied to IE9.
+*/
+/*.cboxIE #colorbox {} */
