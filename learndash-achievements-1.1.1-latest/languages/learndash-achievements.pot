@@ -1,0 +1,522 @@
+# Copyright (C) 2021 LearnDash
+# This file is distributed under the same license as the LearnDash LMS - Achievements plugin.
+msgid ""
+msgstr ""
+"Project-Id-Version: LearnDash LMS - Achievements 1.1.0-beta.15\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/learndash-achievements\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2021-08-04T09:29:21+07:00\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"X-Generator: WP-CLI 2.4.0\n"
+"X-Domain: learndash-achievements\n"
+
+#. Plugin Name of the plugin
+msgid "LearnDash LMS - Achievements"
+msgstr ""
+
+#. Plugin URI of the plugin
+#. Author URI of the plugin
+msgid "http://www.learndash.com/"
+msgstr ""
+
+#. Description of the plugin
+msgid "Award badges and points to users for the successful completion of LearnDash and WordPress activities."
+msgstr ""
+
+#. Author of the plugin
+msgid "LearnDash"
+msgstr ""
+
+#: includes/admin/class-settings-page-shortcodes.php:21
+#: includes/class-settings.php:188
+msgid "Shortcodes"
+msgstr ""
+
+#: includes/admin/class-settings-page-shortcodes.php:35
+msgid "Achievements Shortcodes"
+msgstr ""
+
+#: includes/admin/class-settings-page-shortcodes.php:41
+msgid "Shortcodes Options"
+msgstr ""
+
+#: includes/admin/class-settings-page-shortcodes.php:42
+msgid "You may use shortcodes to display achievements widgets. Provided is a built-in shortcode for displaying user achievements."
+msgstr ""
+
+#: includes/admin/class-settings-page-shortcodes.php:46
+msgid "This shortcode takes a parameter named number, which is the total users to be displayed in an achievement leaderboard."
+msgstr ""
+
+#: includes/admin/class-settings-page-shortcodes.php:48
+msgid "Example:"
+msgstr ""
+
+#: includes/admin/class-settings-page-shortcodes.php:48
+msgid "would display achievement leaderboard of top 20 users."
+msgstr ""
+
+#: includes/admin/class-settings-page-shortcodes.php:52
+msgid "This shortcode displays a list of a logged in user achievements, including achievements icon and its title on icon hover."
+msgstr ""
+
+#: includes/admin/class-settings-page.php:16
+msgid "LearnDash Achievements Settings"
+msgstr ""
+
+#: includes/admin/class-settings-page.php:17
+#: includes/class-settings.php:178
+#: includes/gutenberg/assets/js/index.js:1
+#: includes/gutenberg/blocks/ld-achievements-leaderboard/index.js:32
+#: includes/gutenberg/blocks/ld-my-achievements/index.js:32
+msgid "Settings"
+msgstr ""
+
+#: includes/admin/class-settings-popup-section.php:25
+msgid "Popup Settings"
+msgstr ""
+
+#: includes/admin/class-settings-popup-section.php:54
+msgid "Popup Time"
+msgstr ""
+
+#: includes/admin/class-settings-popup-section.php:55
+msgid "Number of second(s) before the popup fades away. Enter 0 to manually click to hide the popup."
+msgstr ""
+
+#: includes/admin/class-settings-popup-section.php:65
+msgid "Background Color"
+msgstr ""
+
+#: includes/admin/class-settings-popup-section.php:66
+msgid "Background color of the popup."
+msgstr ""
+
+#: includes/admin/class-settings-popup-section.php:74
+msgid "Text Color"
+msgstr ""
+
+#: includes/admin/class-settings-popup-section.php:75
+msgid "Text color of the popup."
+msgstr ""
+
+#: includes/admin/class-settings-popup-section.php:83
+msgctxt "Right to left"
+msgid "RTL"
+msgstr ""
+
+#: includes/admin/class-settings-popup-section.php:84
+msgid "Check this box to use RTL layout."
+msgstr ""
+
+#: includes/admin/class-settings-popup-section.php:87
+msgid "Disable"
+msgstr ""
+
+#: includes/admin/class-settings-popup-section.php:88
+msgid "Enable"
+msgstr ""
+
+#: includes/admin/class-settings-submit-section.php:19
+msgid "Save Options"
+msgstr ""
+
+#: includes/admin/class-settings-submit-section.php:39
+msgid "Save"
+msgstr ""
+
+#: includes/class-achievement.php:251
+msgid "User registration"
+msgstr ""
+
+#: includes/class-achievement.php:252
+msgid "User logs in"
+msgstr ""
+
+#: includes/class-achievement.php:253
+msgid "User adds a post"
+msgstr ""
+
+#: includes/class-achievement.php:254
+msgid "User adds a comment"
+msgstr ""
+
+#: includes/class-achievement.php:255
+msgid "User visits a post"
+msgstr ""
+
+#: includes/class-achievement.php:256
+msgid "User's post gets visited"
+msgstr ""
+
+#: includes/class-achievement.php:259
+msgid "User enrolls into a group"
+msgstr ""
+
+#: includes/class-achievement.php:260
+msgid "User enrolls into a course"
+msgstr ""
+
+#: includes/class-achievement.php:261
+msgid "User completes a course"
+msgstr ""
+
+#: includes/class-achievement.php:262
+msgid "User completes a lesson"
+msgstr ""
+
+#: includes/class-achievement.php:263
+msgid "User completes a topic"
+msgstr ""
+
+#: includes/class-achievement.php:264
+msgid "User passes a quiz"
+msgstr ""
+
+#: includes/class-achievement.php:265
+msgid "User fails a quiz"
+msgstr ""
+
+#: includes/class-achievement.php:266
+msgid "User completes a quiz"
+msgstr ""
+
+#: includes/class-achievement.php:267
+msgid "User uploads assignment"
+msgstr ""
+
+#: includes/class-achievement.php:268
+msgid "User's assignment is approved"
+msgstr ""
+
+#: includes/class-achievement.php:269
+msgid "User's essay question has been graded"
+msgstr ""
+
+#: includes/class-meta-box.php:22
+msgid "Message"
+msgstr ""
+
+#: includes/class-meta-box.php:24
+msgid "Details"
+msgstr ""
+
+#: includes/class-meta-box.php:26
+#: includes/class-post-type.php:124
+msgid "Image"
+msgstr ""
+
+#: includes/class-meta-box.php:195
+msgid "Achievement image is required."
+msgstr ""
+
+#: includes/class-meta-box.php:265
+msgid "Remove"
+msgstr ""
+
+#: includes/class-meta-box.php:270
+msgid "Select Image"
+msgstr ""
+
+#: includes/class-meta-box.php:273
+msgid "Upload Image"
+msgstr ""
+
+#: includes/class-meta-box.php:342
+msgid "Click for Help!"
+msgstr ""
+
+#: includes/class-meta-box.php:353
+msgid "Select Trigger"
+msgstr ""
+
+#: includes/class-meta-box.php:357
+msgid "Triggers"
+msgstr ""
+
+#: includes/class-meta-box.php:493
+#: includes/class-post-type.php:121
+msgid "Trigger"
+msgstr ""
+
+#: includes/class-meta-box.php:494
+msgid "When achievement will be given and displayed."
+msgstr ""
+
+#: includes/class-meta-box.php:500
+msgid "Group"
+msgstr ""
+
+#: includes/class-meta-box.php:501
+msgid "Group that the trigger is assigned to."
+msgstr ""
+
+#: includes/class-meta-box.php:506
+msgid "-- Select Group --"
+msgstr ""
+
+#: includes/class-meta-box.php:507
+msgid "All Groups"
+msgstr ""
+
+#: includes/class-meta-box.php:512
+msgid "Course"
+msgstr ""
+
+#: includes/class-meta-box.php:513
+msgid "Course that the trigger is assigned to."
+msgstr ""
+
+#: includes/class-meta-box.php:519
+msgid "-- Select Course --"
+msgstr ""
+
+#: includes/class-meta-box.php:520
+msgid "All Courses"
+msgstr ""
+
+#: includes/class-meta-box.php:525
+msgid "Lesson"
+msgstr ""
+
+#: includes/class-meta-box.php:526
+msgid "Lesson that the trigger is assigned to."
+msgstr ""
+
+#: includes/class-meta-box.php:532
+#: includes/class-settings.php:107
+msgid "-- Select Lesson --"
+msgstr ""
+
+#: includes/class-meta-box.php:533
+#: includes/class-settings.php:114
+msgid "All Lessons"
+msgstr ""
+
+#: includes/class-meta-box.php:538
+msgid "Topic"
+msgstr ""
+
+#: includes/class-meta-box.php:539
+msgid "Topic that the trigger is assigned to."
+msgstr ""
+
+#: includes/class-meta-box.php:545
+#: includes/class-settings.php:108
+msgid "-- Select Topic --"
+msgstr ""
+
+#: includes/class-meta-box.php:546
+#: includes/class-settings.php:115
+msgid "All Topics"
+msgstr ""
+
+#: includes/class-meta-box.php:551
+msgid "Quiz"
+msgstr ""
+
+#: includes/class-meta-box.php:552
+msgid "Quiz that the trigger is assigned to."
+msgstr ""
+
+#: includes/class-meta-box.php:558
+#: includes/class-settings.php:109
+msgid "-- Select Quiz --"
+msgstr ""
+
+#: includes/class-meta-box.php:559
+#: includes/class-settings.php:116
+msgid "All Quizzes"
+msgstr ""
+
+#: includes/class-meta-box.php:564
+#: templates/shortcode-leaderboard.php:5
+msgid "Points"
+msgstr ""
+
+#: includes/class-meta-box.php:565
+msgid "How many points will be awarded for the achievement."
+msgstr ""
+
+#: includes/class-meta-box.php:570
+#: includes/class-post-type.php:123
+msgid "Occurrences"
+msgstr ""
+
+#: includes/class-meta-box.php:571
+msgid "Maximum number of occurrences the achievement will be given for. Enter 0 for unlimited occurrences."
+msgstr ""
+
+#: includes/class-post-type.php:33
+#: includes/class-post-type.php:44
+#: includes/class-settings.php:133
+#: includes/class-settings.php:168
+#: includes/class-settings.php:209
+msgid "Achievements"
+msgstr ""
+
+#: includes/class-post-type.php:34
+msgid "Achievement"
+msgstr ""
+
+#: includes/class-post-type.php:35
+msgctxt "learndash-achievements"
+msgid "Add New Achievement"
+msgstr ""
+
+#: includes/class-post-type.php:36
+msgid "Add New Achievement"
+msgstr ""
+
+#: includes/class-post-type.php:37
+msgid "Edit Achievement"
+msgstr ""
+
+#: includes/class-post-type.php:38
+msgid "New Achievement"
+msgstr ""
+
+#: includes/class-post-type.php:39
+msgid "View Achievement"
+msgstr ""
+
+#: includes/class-post-type.php:40
+msgid "Search Achievements"
+msgstr ""
+
+#: includes/class-post-type.php:41
+msgid "No Achievement found"
+msgstr ""
+
+#: includes/class-post-type.php:42
+msgid "No Achievement found in Trash"
+msgstr ""
+
+#: includes/class-post-type.php:43
+msgid "Parent Achievement:"
+msgstr ""
+
+#: includes/class-post-type.php:50
+msgid "Achievements created for LearnDash."
+msgstr ""
+
+#: includes/class-post-type.php:122
+msgid "Points Awarded"
+msgstr ""
+
+#: includes/class-post-type.php:151
+msgid "Unlimited"
+msgstr ""
+
+#: includes/class-settings.php:70
+msgid "LearnDash plugin is required to activate LearnDash Achievements add-on plugin. Please activate it first."
+msgstr ""
+
+#: includes/class-settings.php:110
+msgid "-- Select Course First --"
+msgstr ""
+
+#: includes/class-settings.php:111
+msgid "-- Select Lesson First --"
+msgstr ""
+
+#: includes/class-settings.php:112
+msgid "-- Select Topic First --"
+msgstr ""
+
+#: includes/class-settings.php:113
+msgid "-- Select Quiz First --"
+msgstr ""
+
+#: includes/class-settings.php:158
+#: includes/class-settings.php:199
+msgid "Add New"
+msgstr ""
+
+#: includes/widget/class-achievements-widget.php:15
+msgid "Display current user LearnDash Achievements."
+msgstr ""
+
+#: includes/widget/class-achievements-widget.php:19
+#: includes/gutenberg/assets/js/index.js:1
+#: includes/gutenberg/blocks/ld-my-achievements/index.js:8
+msgid "LearnDash My Achievements"
+msgstr ""
+
+#: includes/widget/class-achievements-widget.php:36
+#: templates/shortcode-achievements.php:3
+msgid "My Achievements"
+msgstr ""
+
+#: includes/widget/class-leaderboard-widget.php:15
+msgid "Display LearnDash Achievements points leaderboard."
+msgstr ""
+
+#: includes/widget/class-leaderboard-widget.php:19
+#: includes/gutenberg/assets/js/index.js:1
+#: includes/gutenberg/blocks/ld-achievements-leaderboard/index.js:8
+msgid "LearnDash Achievements Leaderboard"
+msgstr ""
+
+#: includes/widget/class-leaderboard-widget.php:36
+msgid "Leaderboard"
+msgstr ""
+
+#: learndash-achievements.php:95
+msgid "LearnDash LMS - Achievements Add-on requires the following plugin(s) to be active:"
+msgstr ""
+
+#: templates/shortcode-leaderboard.php:4
+msgid "Username"
+msgstr ""
+
+#: includes/gutenberg/assets/js/index.js:1
+#: includes/gutenberg/blocks/ld-achievements-leaderboard/index.js:9
+msgid "Display LearnDash achievements leaderboard."
+msgstr ""
+
+#: includes/gutenberg/assets/js/index.js:1
+#: includes/gutenberg/blocks/ld-achievements-leaderboard/index.js:35
+msgid "Number"
+msgstr ""
+
+#: includes/gutenberg/assets/js/index.js:1
+#: includes/gutenberg/blocks/ld-achievements-leaderboard/index.js:36
+msgid "Number of users that will be displayed in leaderboard."
+msgstr ""
+
+#: includes/gutenberg/assets/js/index.js:1
+#: includes/gutenberg/blocks/ld-achievements-leaderboard/index.js:43
+#: includes/gutenberg/blocks/ld-my-achievements/index.js:42
+msgid "Preview"
+msgstr ""
+
+#: includes/gutenberg/assets/js/index.js:1
+#: includes/gutenberg/blocks/ld-achievements-leaderboard/index.js:47
+#: includes/gutenberg/blocks/ld-my-achievements/index.js:46
+msgid "Show Preview"
+msgstr ""
+
+#: includes/gutenberg/assets/js/index.js:1
+#: includes/gutenberg/blocks/ld-achievements-leaderboard/index.js:63
+msgid "[ld_achievements_leaderboard] shortcode output shown here"
+msgstr ""
+
+#: includes/gutenberg/assets/js/index.js:1
+#: includes/gutenberg/blocks/ld-my-achievements/index.js:9
+msgid "Display a list of current user LearnDash achievements."
+msgstr ""
+
+#: includes/gutenberg/assets/js/index.js:1
+#: includes/gutenberg/blocks/ld-my-achievements/index.js:36
+msgid "Show Title"
+msgstr ""
+
+#: includes/gutenberg/assets/js/index.js:1
+#: includes/gutenberg/blocks/ld-my-achievements/index.js:62
+msgid "[ld_my_achievements] shortcode output shown here"
+msgstr ""
